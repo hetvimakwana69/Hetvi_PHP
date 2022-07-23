@@ -42,7 +42,7 @@
 			</div>
 		</div>
 		<div class="col-md-8 ftr2-bottom">
-			<p>Copyright &copy; 2015 <span>Auto cars</span> All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+			<p>Copyright &copy; 2015 <span>Auto cars</span> All rights reserved | Design by <a href="http://w3layouts.com">Hetvi Makwana</a></p>
 		</div>
 	</div>
 	<!---->

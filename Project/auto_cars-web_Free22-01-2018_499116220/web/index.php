@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="header">
 				<div class="logo">
-					<h1><a href="index"><img src="images/car.png" alt=""/>Rent <span>CARS</span></a></h1>
+					<h1><a href="index"><img src="images/car.png" alt=""/>Rent My<span>CARS</span></a></h1>
 				</div>
 				<div class="top_details">
 					<p><span></span> (880)123 2500</p>
