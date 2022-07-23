@@ -18,7 +18,7 @@ include_once('header.php');
 			<h3><i class="fa fa-user"></i>Profile</h3>
 			<div class="profile-bottom-top">
 			<div class="col-md-4 profile-bottom-img">
-				<img src="images/pr.jpg" alt="">
+				<img src="images/pic.jpg" alt="">
 			</div>
 			<div class="col-md-8 profile-text">
 				<h6>Hetvi Makwana</h6>

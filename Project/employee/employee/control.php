@@ -30,13 +30,13 @@ class control
 			include_once('manage_contact.php');
 			break;
 			case '/manage_car':
-			include_once('manage_contact.php');
+			include_once('manage_car.php');
 			break;
 			case '/manage_cartype':
-			include_once('manage_contact.php');
+			include_once('manage_cartype.php');
 			break;
 			case '/manage_booking':
-			include_once('manage_contact.php');
+			include_once('manage_booking.php');
 			break;
 			default :
 			include_once('404.php');
