@@ -17,12 +17,6 @@ class control
 			case '/404':
 			include_once('404.php');
 			break;
-			case '/add_client':
-			include_once('add_client.php');
-			break;
-			case '/add_emp':
-			include_once('add_emp.php');
-			break;
 			case '/dashboard':
 			include_once('dashboard.php');
 			break;
@@ -32,17 +26,17 @@ class control
 			case '/manage_payment':
 			include_once('manage_payment.php');
 			break;
-			case '/manage_feedback':
-			include_once('manage_feedback.php');
-			break;
-			case '/manage_emp':
-			include_once('manage_emp.php');
-			break;
 			case '/manage_contact':
 			include_once('manage_contact.php');
 			break;
-			case '/manage_client':
-			include_once('manage_client.php');
+			case '/manage_car':
+			include_once('manage_contact.php');
+			break;
+			case '/manage_cartype':
+			include_once('manage_contact.php');
+			break;
+			case '/manage_booking':
+			include_once('manage_contact.php');
 			break;
 			default :
 			include_once('404.php');

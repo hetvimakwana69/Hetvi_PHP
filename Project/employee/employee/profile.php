@@ -21,7 +21,7 @@ include_once('header.php');
 				<img src="images/pr.jpg" alt="">
 			</div>
 			<div class="col-md-8 profile-text">
-				<h6>Jack Dorsey</h6>
+				<h6>Hetvi Makwana</h6>
 				<table>
 				<tr><td>Department</td>  
 				<td>:</td>  
