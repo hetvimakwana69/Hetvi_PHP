@@ -7,7 +7,7 @@ include_once('header.php');
 		    	<h2>
 				<a href="dashboard">Home</a>
 				<i class="fa fa-angle-right"></i>
-				<span>Validation</span>
+				<span>add_cartype</span>
 				</h2>
 		    </div>
 		<!--//banner-->

@@ -32,6 +32,9 @@ class control
 			case '/manage_car':
 			include_once('manage_car.php');
 			break;
+			case '/add_cartype':
+			include_once('add_cartype.php');
+			break;
 			case '/manage_cartype':
 			include_once('manage_cartype.php');
 			break;
