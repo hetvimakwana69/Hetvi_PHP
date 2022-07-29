@@ -22,12 +22,12 @@ include_once('header.php');
 
 				  <table class="table">
 					<thead>
+					
 					  <tr>
 					     <th>Emp_id</th>  
 						<th>Name</th>
 						<th>Username</th>
 						<th>Email_id</th>
-						<th>Password</th>
 						<th>Address</th>
 						<th>Contact_no</th>
 						<th>Edit</th>
@@ -35,30 +35,25 @@ include_once('header.php');
 					  </tr>
 					</thead>
 					<tbody>
+					<?php
+					   foreach($manage_emp_arr as $m)
+					   {
+					?>
 					  <tr>
-					    <td>1</td>
-						<td>Hetvi</td>
-						<td>Hkm</td>
-						<td>Hetvi28@gmail.com</td>
-						<td>2356</td>
-						<td>Maninagar</td>
-						<td>32659874</td>
+					    <td><?php echo $m->e_id;?></td>
+						<td><?php echo $m->e_name;?></td>
+						<td><?php echo $m->user_name;?></td>
+						<td><?php echo $m->emailid;?></td>
+						<td><?php echo $m->address;?></td>
+						<td><?php echo $m->contact_no;?></td>
+						
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
 						<td><a href="#" class="btn btn-danger">Delete</a></td>
 					  </tr>
-					  
-					  <tr>
-					    <td>2</td>
-						<td>Khushi</td>
-						<td>KVyas</td>
-						<td>Khushi98@gmail.com</td>
-						<td>5698</td>
-						<td>Ghodasar</td>
-						<td>326523658</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>
-					  
+					  <?php
+					    }
+					  ?>
+					 
 					  
 					  
 					</tbody>

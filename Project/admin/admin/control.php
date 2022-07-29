@@ -59,9 +59,12 @@ class control extends model
 			case '/manage_feedback':
 			include_once('manage_feedback.php');
 			break;
+			
 			case '/manage_emp':
+			$manage_emp_arr=$this->selectall('employee');
 			include_once('manage_emp.php');
 			break;
+			
 			case '/manage_contact':
 			include_once('manage_contact.php');
 			break;
