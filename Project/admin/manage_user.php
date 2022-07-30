@@ -23,11 +23,10 @@ include_once('header.php');
 				  <table class="table">
 					<thead>
 					  <tr>
-					    <th>Cus_id</th>
+					    <th>u_id</th>
 						<th>name</th>
 						<th>username</th>
 						<th>Emailid</th>
-						<th>password</th>
 						<th>address</th>
 						<th>contact_no</th>
 						<th>aadhar card no</th>
@@ -37,33 +36,26 @@ include_once('header.php');
 					  </tr>
 					</thead>
 					<tbody>
+					<?php  
+					foreach($manage_user_arr as $mu)
+					{
+					?>
 					  <tr>
-					    <td>1</td>
-						<td>Hetvi</td>
-						<td>Hkm</td>
-						<td>hetvi15@gmail.com</td>
-						<td>5689</td>
-						<td>Maninagar</td>
-						<td>95684233</td>
-						<td>9887657789</td>
-						<td>Gj5642</td>
+					    <td><?php echo $mu->cust_id;?></td>
+						<td><?php echo $mu->name;?></td>
+						<td><?php echo $mu->user_name;?></td>
+						<td><?php echo $mu->emailid;?></td>
+						<td><?php echo $mu->con_no;?></td>
+						<td><?php echo $mu->address;?></td>
+						<td><?php echo $mu->a_no;?></td>
+						<td><?php echo $mu->dl_no;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
 						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>l
+					  </tr>
+					  <?php
+					  }
+					  ?>
 					  
-					  <tr>
-					    <td>2</td>
-						<td>Hetvi</td>
-						<td>Hkm</td>
-						<td>hetvi15@gmail.com</td>
-						<td>5689</td>
-						<td>Maninagar</td>
-						<td>95684233</td>
-						<td>9887657789</td>
-						<td>Gj5642</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>l
 					  
 					</tbody>
 				  </table>

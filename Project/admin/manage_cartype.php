@@ -7,7 +7,7 @@ include_once('header.php');
 		    	<h2>
 				<a href="dashboard">Home</a>
 				<i class="fa fa-angle-right"></i>
-				<span>Manage Booking</span>
+				<span>Manage cartype</span>
 				</h2>
 		    </div>
 		<!--//banner-->
@@ -18,41 +18,35 @@ include_once('header.php');
 			<div class="blank-page">
 				
 				<div class="container mt-3">
-				  <h2>Manage Booking </h2>
+				  <h2>Manage cartype</h2>
 
 				  <table class="table">
 					<thead>
 					  <tr>
-						<th>booking_id</th>
-						<th>cust_id</th>
-						<th>car_id</th>
-						<th>book_date</th>
-						<th>book_time</th>
+					    <th>cate_id</th>
+						<th>cate_name</th>
+						<th>cate_desc</th>
+						<th>cate_image</th>
 						<th>Edit</th>
 						<th>Delete</th>
 					  </tr>
 					</thead>
 					<tbody>
+					<?php
+					foreach($manage_cartype_arr as $ca)
+					{
+					?>
 					  <tr>
-						<td>01</td>
-						<td>1</td>
-						<td>1</td>
-						<td>20/06/2022</td>
-						<td>12:00</td>
+					    <td><?php echo $ca->cate_id;?></td>
+						<td><?php echo $ca->cate_name;?></td>
+						<td><?php echo $ca->cate_des;?></td>
+						<td><?php echo $ca->cate_img;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
 						<td><a href="#" class="btn btn-danger">Delete</a></td>
 					  </tr>
-					  
-					  <tr>
-						<td>02</td>
-						<td>2</td>
-						<td>2</td>
-						<td>25/06/2022</td>
-						<td>01:00</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>
-					  
+					  <?php
+					}
+					  ?>
 					</tbody>
 				  </table>
 				</div>

@@ -32,15 +32,21 @@ include_once('header.php');
 					  </tr>
 					</thead>
 					<tbody>
+					<?php
+					foreach($manage_contact_arr as $mc)
+					{
+					?>
 					  <tr>
-					    <td>1</td>
-						<td>Hetvi</td>
-						<td>Hkm153@gmail.com</td>
-						<td>9865435568</td>
+					    <td><?php echo $mc->cont_id;?></td>
+						<td><?php echo $mc->name;?></td>
+						<td><?php echo $mc->emailid;?></td>
+						<td><?php echo $mc->cont_no;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
 						<td><a href="#" class="btn btn-danger">Delete</a></td>
 					  </tr>
-					  
+					  <?php
+					  }
+					  ?>
 					  <tr>
 					    <td>2</td>
 						<td>Khushi</td>

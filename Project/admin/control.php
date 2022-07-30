@@ -20,6 +20,32 @@ class control extends model
 			include_once('404.php');
 			break;
 			case '/add_client':
+			if(isset($_REQUEST['submit']))
+			{
+				$name=$_REQUEST['name'];
+				$user_name=$_REQUEST['user_name'];
+				$emailid=$_REQUEST['emailid'];
+				$password=$_REQUEST['pass'];
+				$pass=md5($password);
+				$address=$_REQUEST['address'];
+				$contact_no=$_REQUEST['contact_no'];
+				$a_no=$_REQUEST['a_no'];
+				$dl_no=$_REQUEST['dl_no'];
+				$puc=$_REQUEST['puc'];
+				$insurance=$_REQUEST['insurance'];
+				
+				$arr=array("name"=>$name,"user_name"=>$user_name,"emailid"=>$emailid,"pass"=>$pass,"address"=>$address,"contact_no"=>$contact_no,"a_no"=>$a_no,"dl_no"=>$dl_no,"puc"=>$puc,"insurance"=>$insurance);
+				
+				$res=$this->insert('client',$arr);
+				if($res)
+				{
+					echo  "<script>alert('Register success')</script>";
+				}
+				else
+				{
+					echo "not success";
+				}
+			}
 			include_once('add_client.php');
 			break;
 			case '/add_emp':
@@ -47,16 +73,23 @@ class control extends model
 			}
 			include_once('add_emp.php');
 			break;
+			
 			case '/dashboard':
 			include_once('dashboard.php');
 			break;
+			
 			case '/manage_user':
+			$manage_user_arr=$this->selectall('customer');
 			include_once('manage_user.php');
 			break;
+			
 			case '/manage_payment':
+			$manage_payment_arr=$this->selectall('payment');
 			include_once('manage_payment.php');
 			break;
+			
 			case '/manage_feedback':
+			$manage_feedback_arr=$this->selectall('feedback');
 			include_once('manage_feedback.php');
 			break;
 			
@@ -66,13 +99,28 @@ class control extends model
 			break;
 			
 			case '/manage_contact':
+			$manage_contact_arr=$this->selectall('contact');
 			include_once('manage_contact.php');
 			break;
+			
 			case '/manage_client':
+			$manage_client_arr=$this->selectall('client');
 			include_once('manage_client.php');
 			break;
+			
 			case '/manage_booking':
+			$manage_booking_arr=$this->selectall('booking');
 			include_once('manage_booking.php');
+			break;
+			
+			case '/manage_car':
+			$manage_car_arr=$this->selectall('car');
+			include_once('manage_car.php');
+			break;
+			
+			case '/manage_cartype':
+			$manage_cartype_arr=$this->selectall('category');
+			include_once('manage_cartype.php');
 			break;
 			default :
 			include_once('404.php');

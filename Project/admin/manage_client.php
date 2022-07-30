@@ -27,7 +27,6 @@ include_once('header.php');
 						<th>name</th>
 						<th>username</th>
 						<th>Emailid</th>
-						<th>password</th>
 						<th>address</th>
 						<th>contact_no</th>
 						<th>aadhar card no</th>
@@ -39,38 +38,28 @@ include_once('header.php');
 					  </tr>
 					</thead>
 					<tbody>
+					<?php
+					foreach($manage_client_arr as $c)
+					{
+					?>
 					  <tr>
-					    <td>1</td>
-					    <td>Hetvi</td>
-						<td>Hkm</td>
-						<td>hetvi15@gmail.com</td>
-						<td>5689</td>
-						<td>Maninagar</td>
-						<td>95684233</td>
-						<td>9887657789</td>
-						<td>Gj5642</td>
-						<td>3265846</td>
-						<td>986547123</td>
+					    <td><?php echo $c->client_id;?></td>
+					    <td><?php echo $c->name;?></td>
+						<td><?php echo $c->user_name;?></td>
+						<td><?php echo $c->emailid;?></td>
+						<td><?php echo $c->address;?></td>
+						<td><?php echo $c->contact_no;?></td>
+						<td><?php echo $c->a_no;?></td>
+						<td><?php echo $c->dl_no;?></td>
+						<td><?php echo $c->puc;?></td>
+						<td><?php echo $c->insurance;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
 						<td><a href="#" class="btn btn-danger">Delete</a></td>
 					  </tr>
-					  
-					  <tr>
-					    <td>2</td>
-					    <td>Khushi</td>
-						<td>Kvyas</td>
-						<td>KVYAS@gmail.com</td>
-						<td>0987</td>
-						<td>Ghodasar</td>
-						<td>8679809</td>
-						<td>986457879</td>
-						<td>Gj5689</td>
-						<td>3454555</td>
-						<td>136595558</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>
-					  
+					  <?php
+					}
+					  ?>
+					 
 					</tbody>
 				  </table>
 				</div>
