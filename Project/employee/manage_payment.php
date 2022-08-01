@@ -32,23 +32,21 @@ include_once('header.php');
 					  </tr>
 					</thead>
 					<tbody>
+					<?php
+					foreach($manage_payment_arr as $d)
+					{
+					?>
 					  <tr>
-						<td>01</td>
-						<td>1</td>
-						<td>2</td>
-						<td>cash</td>
+						<td><?php echo $d->p_id?></td>
+						<td><?php echo $d->cust_id?></td>
+						<td><?php echo $d->booking_id?></td>
+						<td><?php echo $d->payment_type?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
 						<td><a href="#" class="btn btn-danger">Delete</a></td>
 					  </tr>
-					  
-					  <tr>
-						<td>02</td>
-						<td>2</td>
-						<td>3</td>
-						<td>cash</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>
+					  <?php
+					}
+					  ?>
 					  
 					</tbody>
 				  </table>

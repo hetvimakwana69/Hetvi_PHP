@@ -32,24 +32,22 @@ include_once('header.php');
 					  </tr>
 					</thead>
 					<tbody>
+					<?php
+					foreach($manage_contact_arr as $a)
+					{
+					?>
 					  <tr>
-					    <td>1</td>
-						<td>Hetvi</td>
-						<td>Hkm153@gmail.com</td>
-						<td>9865435568</td>
+					    <td><?php echo $a->cont_id;?></td>
+						<td><?php echo $a->name;?></td>
+						<td><?php echo $a->emailid;?></td>
+						<td><?php echo $a->cont_no;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
 						<td><a href="#" class="btn btn-danger">Delete</a></td>
 					  </tr>
-					  
-					  <tr>
-					    <td>2</td>
-						<td>Khushi</td>
-						<td>kkv253@gmail.com</td>
-						<td>9865423684</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>
-					  
+					  <?php
+					  }
+					  ?>
+					 
 					</tbody>
 				  </table>
 				</div>

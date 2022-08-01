@@ -36,31 +36,26 @@ include_once('header.php');
 					  </tr>
 					</thead>
 					<tbody>
+					<?php
+					foreach($manage_car_arr as $e)
+					{
+					?>
 					  <tr>
-					    <td>201</td>
-						<td>1</td>
-						<td>Maruti suzuki</td>
-						<td>good car</td>
-						<td>15000</td>
-						<td>Maruti Suzuki</td>
-						<td>suv</td>
-						<td>petrol</td>
+					    <td><?php echo $e->car_id?></td>
+						<td><?php echo $e->client_id?></td>
+						<td><?php echo $e->name?></td>
+						<td><?php echo $e->des?></td>
+						<td><?php echo $e->price?></td>
+						<td><img src="picture/<?php echo $e->img?>"width="50px" height="50px"></td>
+						<td><?php echo $e->type?></td>
+						<td><?php echo $e->fuel_type?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
 						<td><a href="#" class="btn btn-danger">Delete</a></td>
 					  </tr>
-					  
-					  <tr>
-					    <td>202</td>
-					    <td>2</td>
-						<td>Mahindra toyota</td>
-						<td>good car</td>
-						<td>20000</td>
-						<td>Mahindra toyota</td>
-						<td>sedan</td>
-						<td>petrol</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>
+					 <?php
+					}
+					 ?> 
+					 
 					  
 					</tbody>
 				  </table>

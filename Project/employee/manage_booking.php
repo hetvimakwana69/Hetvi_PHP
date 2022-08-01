@@ -33,25 +33,24 @@ include_once('header.php');
 					  </tr>
 					</thead>
 					<tbody>
+					<?php
+					foreach($manage_booking_arr as $b)
+					{
+					?>
 					  <tr>
-						<td>01</td>
-						<td>1</td>
-						<td>1</td>
-						<td>20/06/2022</td>
-						<td>12:00</td>
+						<td><?php echo $b->booking_id;?></td>
+						<td><?php echo $b->cust_id;?></td>
+						<td><?php echo $b->car_id;?></td>
+						<td><?php echo $b->b_date;?></td>
+						<td><?php echo $b->b_time;?></td>
+						
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
 						<td><a href="#" class="btn btn-danger">Delete</a></td>
 					  </tr>
+					  <?php
+					}
+					  ?>
 					  
-					  <tr>
-						<td>02</td>
-						<td>2</td>
-						<td>2</td>
-						<td>25/06/2022</td>
-						<td>01:00</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>
 					  
 					</tbody>
 				  </table>

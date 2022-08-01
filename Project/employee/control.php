@@ -1,5 +1,6 @@
 <?php
 include_once('../admin/model.php');
+
 class control extends model
 {
 	function __construct()
@@ -31,14 +32,17 @@ class control extends model
 			break;
 			
 			case '/manage_payment':
+			$manage_payment_arr=$this->selectall('payment');
 			include_once('manage_payment.php');
 			break;
 			
 			case '/manage_contact':
+			$manage_contact_arr=$this->selectall('contact');
 			include_once('manage_contact.php');
 			break;
 			
 			case '/manage_car':
+			$manage_car_arr=$this->selectall('car');
 			include_once('manage_car.php');
 			break;
 			
@@ -48,14 +52,14 @@ class control extends model
 				$cate_name=$_REQUEST['cate_name'];
 				$cate_des=$_REQUEST['cate_des'];
 				
-				$cate_img=$_FILES['file']['name'];  
-				$path='upload/customer/'.$cate_img;
-				$dup_file=$_FILES['file']['tmp_name'];
+				$cate_img=$_FILES['cate_img']['name'];  
+				$path='picture/'.$cate_img;
+				$dup_file=$_FILES['cate_img']['tmp_name'];
 				move_uploaded_file($dup_file,$path);
 				
 				$arr=array("cate_name"=>$cate_name,"cate_des"=>$cate_des,"cate_img"=>$cate_img);
 				
-				$res=$this->insert('client',$arr);
+				$res=$this->insert('category',$arr);
 				if($res)
 				{
 					echo  "<script>alert('Register success')</script>";
@@ -70,10 +74,12 @@ class control extends model
 			break;
 			
 			case '/manage_cartype':
+			$manage_cartype_arr=$this->selectall('category');
 			include_once('manage_cartype.php');
 			break;
 			
 			case '/manage_booking':
+			$manage_booking_arr=$this->selectall('booking');
 			include_once('manage_booking.php');
 			break;
 			

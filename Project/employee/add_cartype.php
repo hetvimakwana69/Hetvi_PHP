@@ -16,22 +16,22 @@ include_once('header.php');
  		
  		<div class="validation-form">
  	<!---->
-  	    
-        <form>
+  	    <
+        <form action="" method="post" enctype="multipart/form-data">
          	<div class="vali-form">
             <div class="col-md-12 form-group1">
               <label class="control-label">Name</label>
-              <input type="text" name="name" placeholder="Name" required=""><br>
+              <input type="text" name="cate_name" placeholder="Name" required=""><br>
             </div>
 			<div class="clearfix"> </div>
 			</div>
 			<div class="col-md-12 form-group1">
               <label class="control-label">Description</label>
-              <input type="text" name="des" placeholder="des" required=""><br><br>
+              <input type="text" name="cate_des" placeholder="des" required=""><br><br>
             </div>
 			 <div class="col-md-6 form-group1 form-last">
               <label class="control-label">Image</label>
-              <input type="file" name="image" required=""><br>
+              <input type="file" name="cate_img" required=""><br>
             </div>
 			<div class="clearfix"> </div>
 		
