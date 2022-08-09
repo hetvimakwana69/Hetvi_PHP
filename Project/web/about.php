@@ -7,10 +7,28 @@
 		<div class="container">
 			<div class="header">
 				<div class="logo">
-					<h1><a href="index"><img src="images/car.png" alt=""/>AUTO <span>CARS</span></a></h1>
+					<h1><a href="index"><img src="images/car.png" alt=""/>Rent My <span>CARS</span></a></h1>
 				</div>
 				<div class="top_details">
-					<p><span></span> (880)123 2500</p>
+					<ul>
+					<?php
+				if(isset($_SESSION['user_name']))
+				{
+				?>
+					<li><a href="logout">Logout</a></li>
+					<li><a href="profile">profile</a></li>
+			    <?php	
+				}
+				else
+				{
+				?>
+				    <li><a href="login">Login</a></li>
+					<li><a href="signup">Sign up</a></li>
+				<?php
+				}
+				?>
+				</ul>
+				</ul>
 					<div class="search">
 						<form>
 							<input type="text" value="" placeholder="Search location">

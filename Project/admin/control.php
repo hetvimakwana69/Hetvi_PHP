@@ -5,20 +5,63 @@ class control extends model
 {
 	function __construct()
 	{
+		session_start();
 		model::__construct();
 		$path=$_SERVER['PATH_INFO'];
 		
 		switch($path)
 		{
 			case '/index':
+			if(isset($_REQUEST['submit']))
+			{
+				$user_name=$_REQUEST['user_name'];
+				$password=$_REQUEST['pass'];
+				$pass=md5($password);
+				
+				$where=array("user_name"=>$user_name,"pass"=>$pass);
+				$run=$this->select_where('admin',$where);
+				
+				$res=$run->num_rows; 
+				if($res==1) 
+				{
+					
+					$_SESSION['admin']=$user_name;
+					
+					echo "<script> 
+						alert('Login Success') 
+						window.location='dashboard';
+						</script>";
+					
+				}
+				else
+				{
+					echo "<script> 
+						alert('Login Failed due wrong credebntial') 
+						window.location='index';
+						</script>";
+				}
+			}
 			include_once('index.php');
 			break;
+			
+			case '/admin_logout':
+			unset($_SESSION['admin']);
+			echo "<script>
+			alert('Logout success')
+			window.location='index'
+			</script>";
+			
+			include_once('profile.php');
+			break;
+			
 			case '/profile':
 			include_once('profile.php');
 			break;
+			
 			case '/404':
 			include_once('404.php');
 			break;
+			
 			case '/add_client':
 			if(isset($_REQUEST['submit']))
 			{
@@ -48,6 +91,7 @@ class control extends model
 			}
 			include_once('add_client.php');
 			break;
+			
 			case '/add_emp':
             if(isset($_REQUEST['submit']))
 			{
@@ -72,6 +116,39 @@ class control extends model
 				}
 			}
 			include_once('add_emp.php');
+			break;
+			
+			case '/index':
+			if(isset($_REQUEST['submit']))
+			{
+				$user_name=$_REQUEST['user_name'];
+				$password=$_REQUEST['pass'];
+				$pass=md5($password);
+				
+				$where=array("user_name"=>$user_name,"pass"=>$pass);
+				$run=$this->select_where('customer',$where);
+				
+				$res=$run->num_rows; 
+				if($res==1) 
+				{
+					
+					$_SESSION['user_name']=$user_name;
+					
+					echo "<script> 
+						alert('Login Success') 
+						window.location='index';
+						</script>";
+					
+				}
+				else
+				{
+					echo "<script> 
+						alert('Login Failed due wrong credebntial') 
+						window.location='index';
+						</script>";
+				}
+			}
+			include_once('index.php');
 			break;
 			
 			case '/dashboard':
@@ -122,6 +199,7 @@ class control extends model
 			$manage_cartype_arr=$this->selectall('category');
 			include_once('manage_cartype.php');
 			break;
+			
 			default :
 			include_once('404.php');
 			break;

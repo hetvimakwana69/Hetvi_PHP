@@ -1,4 +1,12 @@
+<?php
 
+if(isset($_SESSION['admin']))
+{
+	echo "<script>
+	window.location='dashboard';
+	</script>";
+}
+?>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -27,14 +35,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<h1><a href="index.php">Admin Login  </a></h1>
 		<div class="login-bottom">
 			<h2>Login</h2>
-			<form>
+			<form action="" method="post">
 			<div class="col-md-12">
 				<div class="login-mail">
-					<input type="text" placeholder="Email" required="">
+					<input type="text" name="user_name" placeholder="Username" required="">
 					<i class="fa fa-envelope"></i>
 				</div>
 				<div class="login-mail">
-					<input type="password" placeholder="Password" required="">
+					<input type="password" name="pass" placeholder="Password" required="">
 					<i class="fa fa-lock"></i>
 				</div>
 				   <a class="news-letter " href="#">
@@ -45,7 +53,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="login-do">
 				<label class="hvr-shutter-in-horizontal login-sub">
-					<input type="submit" value="login">
+					<input type="submit" name="submit" value="login">
 					</label>
 			</div>
 			

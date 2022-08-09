@@ -249,6 +249,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
                         <a href="manage_cartype" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i> <span class="nav-label">Manage cartype</span> </a>
                     </li>
+					<li>
+                        <a href="admin_logout" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i> <span class="nav-label">Logout</span> </a>
+                    </li>
                     
                 </ul>
             </div>
