@@ -15,8 +15,8 @@
 				if(isset($_SESSION['user_name']))
 				{
 				?>
-					<li><a href="logout">Logout</a></li>
-					<li><a href="profile">profile</a></li>
+					<button class="btn btn-light"><a href="logout">Logout</a></button>
+					<button class="btn btn-light"><a href="profile">profile</a></button>
 			    <?php	
 				}
 				else
