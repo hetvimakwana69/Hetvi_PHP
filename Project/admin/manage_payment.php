@@ -47,14 +47,7 @@ include_once('header.php');
 					  <?php
 					}
 					  ?>
-					  <tr>
-						<td>02</td>
-						<td>2</td>
-						<td>3</td>
-						<td>cash</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>
+					  
 					  
 					</tbody>
 				  </table>

@@ -62,6 +62,8 @@ class control extends model
 			include_once('404.php');
 			break;
 			
+			
+			
 			case '/add_client':
 			if(isset($_REQUEST['submit']))
 			{
@@ -198,6 +200,88 @@ class control extends model
 			case '/manage_cartype':
 			$manage_cartype_arr=$this->selectall('category');
 			include_once('manage_cartype.php');
+			break;
+			
+			case '/delete':
+			if(isset($_REQUEST['del_employee_id']))
+			{
+				$e_id=$_REQUEST['del_employee_id'];
+				$where=array("e_id"=>$e_id);
+				$res=$this->delete_where('employee',$where);
+				if($res)
+				{
+					echo "<script>
+					  alert('Delete success')
+					  window.location='manage_emp';
+					  </script>";
+				}
+			 }
+			 
+			 if(isset($_REQUEST['del_client_id']))
+			 {
+				 $client_id=$_REQUEST['del_client_id'];
+				 $where=array("client_id"=>$client_id);
+				 $res=$this->delete_where('client',$where);
+				 if($res)
+				 {
+					echo "<script>
+					  alert('Delete success')
+					  window.location='manage_client';
+					  </script>";
+				 }
+			 }
+			 if(isset($_REQUEST['del_cust_id']))
+			 {
+				 $cust_id=$_REQUEST['del_cust_id'];
+				 $where=array("cust_id"=>$cust_id);
+				 $res=$this->delete_where('customer',$where);
+				 if($res)
+				 {
+					echo "<script>
+					  alert('Delete success')
+					  window.location='manage_user';
+					  </script>";
+				 }
+			 }
+			 if(isset($_REQUEST['del_cont_id']))
+			 {
+				 $cont_id=$_REQUEST['del_cont_id'];
+				 $where=array("cont_id"=>$contact_id);
+				 $res=$this->delete_where('contact',$where);
+				 if($res)
+				 {
+					echo "<script>
+					  alert('Delete success')
+					  window.location='manage_contact';
+					  </script>";
+				 }
+			 }
+			 if(isset($_REQUEST['del_feed_id']))
+			 {
+				 $feedback_id=$_REQUEST['del_feed_id'];
+				 $where=array("feedback_id"=>$feedback_id);
+				 $res=$this->delete_where('feedback',$where);
+				 if($res)
+				 {
+					  echo "<script>
+					  alert('Delete success')
+					  window.location='manage_feedback';
+					  </script>";
+				 }
+			 }
+			 if(isset($_REQUEST['del_car_id']))
+			 {
+				 $car_id=$_REQUEST['del_car_id'];
+				 $where=array("car_id"=>$car_id);
+				 $res=$this->delete_where('car',$where);
+				 if($res)
+				 {
+					  echo "<script>
+					  alert('Delete success')
+					  window.location='manage_car';
+					  </script>";
+				 }
+			 }
 			break;
 			
 			default :

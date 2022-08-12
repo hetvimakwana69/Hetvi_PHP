@@ -42,19 +42,12 @@ include_once('header.php');
 						<td><?php echo $mc->emailid;?></td>
 						<td><?php echo $mc->cont_no;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
+						<td><a href="delete?del_cont_id=<?php echo $mc->contact_id?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					  <?php
 					  }
 					  ?>
-					  <tr>
-					    <td>2</td>
-						<td>Khushi</td>
-						<td>kkv253@gmail.com</td>
-						<td>9865423684</td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
-					  </tr>
+					 
 					  
 					</tbody>
 				  </table>
