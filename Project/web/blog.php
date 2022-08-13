@@ -41,24 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h1><a href="index"><img src="images/car.png" alt=""/>AUTO <span>CARS</span></a></h1>
 				</div>
 				<div class="top_details">
-					<p><span>
-				<?php
-				if(isset($_SESSION['user_name']))
-				{
-				?>
-					<button class="btn btn-light"><a href="logout">Logout</a></button>
-					<button class="btn btn-light"><a href="signup">profile</a></button>
-			    <?php	
-				}
-				else
-				{
-				?>
-				    <li><a href="login">Login</a></li>
-					<li><a href="signup">Sign up</a></li>
-				<?php
-				}
-				?>
-				</span> </p>
+					<p><span>(880)123 2500</span> </p>
 					<div class="search">
 						<form>
 							<input type="text" value="" placeholder="Search location">

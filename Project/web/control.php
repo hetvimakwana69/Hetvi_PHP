@@ -31,9 +31,7 @@ class control extends model
 			include_once('services.php');
 			break;
 			
-			case '/profile':
-			include_once('profile.php');
-			break;
+			
 			
 			case '/login':
 			if(isset($_REQUEST['submit']))
@@ -89,7 +87,11 @@ class control extends model
 				$res=$this->insert('customer',$arr);
 				if($res)
 				{
-					echo  "<script>alert('Register success')</script>";
+					
+					echo "<script> 
+					alert('signup success') 
+					window.location='index';
+					</script>";
 				}
 				else
 				{
@@ -97,6 +99,10 @@ class control extends model
 				}
 			}
 			include_once('signup.php');
+			break;
+			
+			case '/myprofile':
+			include_once('myprofile.php');
 			break;
 			
 			default :

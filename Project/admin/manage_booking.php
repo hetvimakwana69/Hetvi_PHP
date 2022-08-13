@@ -44,7 +44,7 @@ include_once('header.php');
 						<td><?php echo $mb->b_date;?></td>
 						<td><?php echo $mb->b_time;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
+						<td><a href="delete?del_booking_id=<?php echo $mb->booking_id?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					  <?php
 					}

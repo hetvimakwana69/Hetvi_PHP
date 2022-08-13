@@ -42,7 +42,7 @@ include_once('header.php');
 						<td><?php echo $ca->cate_des;?></td>
 						<td><?php echo $ca->cate_img;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
+						<td><a href="delete?del_cate_id=<?php echo $ca->cate_id?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					  <?php
 					}

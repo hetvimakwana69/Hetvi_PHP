@@ -42,7 +42,7 @@ include_once('header.php');
 						<td><?php echo $a->emailid;?></td>
 						<td><?php echo $a->cont_no;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
+						<td><a href="delete?del_cont_id=<?php echo $a->cont_id;?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					  <?php
 					  }

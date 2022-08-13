@@ -269,6 +269,32 @@ class control extends model
 					  </script>";
 				 }
 			 }
+			  if(isset($_REQUEST['del_booking_id']))
+			 {
+				 $booking_id=$_REQUEST['del_booking_id_id'];
+				 $where=array("booking_id"=>$booking_id);
+				 $res=$this->delete_where('booking',$where);
+				 if($res)
+				 {
+					echo "<script>
+					  alert('Delete success')
+					  window.location='manage_booking';
+					  </script>";
+				 }
+			 }
+			  if(isset($_REQUEST['del_p_id']))
+			 {
+				 $p_id=$_REQUEST['del_p_id'];
+				 $where=array("p_id"=>$p_id);
+				 $res=$this->delete_where('payment',$where);
+				 if($res)
+				 {
+					echo "<script>
+					  alert('Delete success')
+					  window.location='manage_payment';
+					  </script>";
+				 }
+			 }
 			 if(isset($_REQUEST['del_car_id']))
 			 {
 				 $car_id=$_REQUEST['del_car_id'];
@@ -279,6 +305,19 @@ class control extends model
 					  echo "<script>
 					  alert('Delete success')
 					  window.location='manage_car';
+					  </script>";
+				 }
+			 }
+			  if(isset($_REQUEST['del_cate_id']))
+			 {
+				 $cate_id=$_REQUEST['del_cate_id'];
+				 $where=array("cate_id"=>$cate_id);
+				 $res=$this->delete_where('category',$where);
+				 if($res)
+				 {
+					  echo "<script>
+					  alert('Delete success')
+					  window.location='manage_cartype';
 					  </script>";
 				 }
 			 }

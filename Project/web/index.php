@@ -17,7 +17,7 @@
 				{
 				?>
 					<button class="btn btn-light"><a href="logout">Logout</a></button>
-					<button class="btn btn-light"><a href="profile">profile</a></button>
+					<button class="btn btn-light"><a href="myprofile">profile</a></button>
 			    <?php	
 				}
 				else

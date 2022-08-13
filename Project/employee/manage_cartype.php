@@ -7,7 +7,7 @@ include_once('header.php');
 		    	<h2>
 				<a href="dashboard">Home</a>
 				<i class="fa fa-angle-right"></i>
-				<span>Manage car</span>
+				<span>Manage cartype</span>
 				</h2>
 		    </div>
 		<!--//banner-->
@@ -18,7 +18,7 @@ include_once('header.php');
 			<div class="blank-page">
 				
 				<div class="container mt-3">
-				  <h2>Manage car</h2>
+				  <h2>Manage cartype</h2>
 
 				  <table class="table">
 					<thead>
@@ -27,9 +27,7 @@ include_once('header.php');
 						
 						<th>name</th>
 						<th>desc</th>
-						
-						<th>car_img</th>
-						
+	                    <th>car_img</th>
 						<th>Edit</th>
 						<th>Delete</th>
 					  </tr>
@@ -45,7 +43,7 @@ include_once('header.php');
 						<td><?php echo $c->cate_des;?></td>
 						<td><img src="picture/<?php echo $c->cate_img;?>"width="50px" height="50px"></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="#" class="btn btn-danger">Delete</a></td>
+						<td><a href="delete?del_cate_id=<?php echo $c->cate_id?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					  <?php
 					}
