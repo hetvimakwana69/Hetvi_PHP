@@ -22,11 +22,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 	<!-- main -->
 	<div class="w3layouts-main"> 
-		<h1> Signup Form</h1>
+		<h1> Edit profile</h1>
 		<div class="agilesign-form">  
 			<div class="agileits-top">
 				<form action="" method="post" enctype="multipart/form-data">
-				
+				<div class="styled-input w3ls-text">
+						<input type="text" name="cust_id" required=""/>
+						<label>Cust ID:</label>
+						<span></span>
+					</div>
 					<div class="styled-input w3ls-text">
 						<input type="text" name="name" required=""/>
 						<label>Name:</label>

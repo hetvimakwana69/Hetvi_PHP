@@ -18,14 +18,14 @@
 				{
 				?>
 					<button class="btn btn-light"><a href="logout">Logout</a></button>
-					<button class="btn btn-light"><a href="profile">profile</a></button>
+					<button class="btn btn-light"><a href="myprofile">profile</a></button>
 			    <?php	
 				}
 				else
 				{
 				?>
-				    <li><a href="login">Login</a></li>
-					<li><a href="signup">Sign up</a></li>
+				    <button class="btn btn-light"><a href="login">Login</a></button>
+					<button class="btn btn-light"><a href="signup">Signup</a></button>
 				<?php
 				}
 				?>

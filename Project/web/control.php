@@ -77,6 +77,7 @@ class control extends model
 			if(isset($_REQUEST['submit']))
 			{
 				$user_name=$_REQUEST['user_name'];
+				$user_name=$_REQUEST['user_name'];
 				$emailid=$_REQUEST['emailid'];
 				$password=$_REQUEST['pass'];
 				$pass=md5($password);
@@ -102,7 +103,21 @@ class control extends model
 			break;
 			
 			case '/myprofile':
+			$where=array("user_name"=>$_SESSION['user_name']);
+			$run=$this->select_where('customer',$where);
+			$fetch=$run->fetch_object();
 			include_once('myprofile.php');
+			break;
+			
+			case '/editprofile':
+			if(isset($_REQUEST['edit_cust_id']))
+			{
+				$cust_id=$_REQUEST['edit_cust_id'];
+				$where=array("cust_id"=>$cust_id);
+				$run=$this->select_where('customer',$where);
+				$fetch=$run->fetch_object();
+			}
+			include_once('editprofile.php');
 			break;
 			
 			default :

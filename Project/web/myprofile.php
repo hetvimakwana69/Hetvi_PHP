@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Trendy Profile Widget Flat Responsive Widget Template :: w3layouts</title>
+<title>Profile</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,11 +22,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 	<div class="main">
-		<h1>Trendy Profile Widget</h1>
+		<h1> Profile </h1>
 		<div class="agile_main_grid">
 			<div class="agile_main_grid_left">
 				<div class="agile_main_grid_left1">
-					<h2>Trendy Profile</h2>
+					<h2>Profile</h2>
 				</div>
 				<div class="top-nav">
 				<span class="menu"><img src="images/menu.png" alt=""/></span>
@@ -55,29 +55,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="agile_main_grid_left_grid">
 								<div class="agile_main_grid_left2">
 									<img src="images/11.png" alt=" " />
-									<h3>Carl Rider <a href="mailto:info@example.com">@carldesigner.com</a></h3>
-									<p>UI / UX / PHP Developer</p>
+									<h3>ID:<?php echo $fetch->cust_id;?></h3>
+									<p>Name:<?php echo $fetch->name;?></p>
 									<div class="agile_main_grid_left2_grid">
-										<div class="agile_main_grid_left2_grid_left">
-											<h4>Following</h4>
-											<h5>342</h5>
+									<div class="agile_main_grid_left2_grid_left">
+											<h5>Username:</h5>
+											<h6><?php echo $fetch->user_name;?></h6>
 										</div>
 										<div class="agile_main_grid_left2_grid_left">
-											<h4>Posts</h4>
-											<h5>231</h5>
+											<h5>Email:</h5>
+											<h6><?php echo $fetch->emailid;?></h6>
 										</div>
 										<div class="agile_main_grid_left2_grid_left">
-											<h4>Followers</h4>
-											<h5>123</h5>
+											<h5>Contact no:</h5>
+											<h6><?php echo $fetch->con_no;?></h6>
+										</div>
+									    <div class="agile_main_grid_left2_grid_left">
+											<h5>Address:</h5>
+											<h6><?php echo $fetch->address;?></h6>
 										</div>
 										<div class="clear"> </div>
 									</div>
+									
 									<div class="agile_main_grid_left2_grid_bottom">
-										<a href="#">Follow</a>
+										<a href="editprofile?edit_cust_id=<?php echo $fetch->cust_id;?>"">Edit</a>
 									</div>
 								</div>
 							</div>
 						</li>
+						<!--
 						<li>
 							<div class="agile_main_grid_left_grid">
 								<div class="agile_main_grid_left2">
@@ -132,6 +138,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 							</div>
 						</li>
+						-->
 					</ul>
 				</div>
 				</section>
