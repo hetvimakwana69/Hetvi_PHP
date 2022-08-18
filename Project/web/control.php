@@ -76,13 +76,15 @@ class control extends model
 			case '/signup':
 			if(isset($_REQUEST['submit']))
 			{
-				$user_name=$_REQUEST['user_name'];
+				$name=$_REQUEST['name'];
 				$user_name=$_REQUEST['user_name'];
 				$emailid=$_REQUEST['emailid'];
+				$con_no=$_REQUEST['con_no'];
+				$address=$_REQUEST['address'];
 				$password=$_REQUEST['pass'];
 				$pass=md5($password);
 				
-				$arr=array("user_name"=>$user_name,"emailid"=>$emailid,"pass"=>$pass);
+				$arr=array("name"=>$name,"user_name"=>$user_name,"emailid"=>$emailid,"pass"=>$pass,"con_no"=>$con_no,"address"=>$address);
 				
 				
 				$res=$this->insert('customer',$arr);
@@ -116,6 +118,26 @@ class control extends model
 				$where=array("cust_id"=>$cust_id);
 				$run=$this->select_where('customer',$where);
 				$fetch=$run->fetch_object();
+				
+				if(isset($_REQUEST['submit']))
+				{
+					$name=$_REQUEST['name'];
+					$user_name=$_REQUEST['user_name'];
+					$emailid=$_REQUEST['emailid'];
+					$con_no=$_REQUEST['con_no'];
+					$address=$_REQUEST['address'];
+					
+					$arr=array("name"=>$name,"user_name"=>$user_name,"emailid"=>$emailid,"con_no"=>$con_no,"address"=>$address);
+			        $res=$this->update('customer',$arr,$where);
+					if($res)
+					{
+						echo "<script>
+						alert('update success')
+						window.location='myprofile'
+						</script>";
+					}
+					
+				}
 			}
 			include_once('editprofile.php');
 			break;

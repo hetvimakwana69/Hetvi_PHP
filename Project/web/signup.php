@@ -38,13 +38,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<span></span>
 					</div>
 					<div class="styled-input w3ls-text">
+						<input type="password" name="pass" required=""/>
+						<label>Password:</label>
+						<span></span>
+					</div>
+					<div class="styled-input w3ls-text">
 						<input type="text" name="emailid" required=""/>
 						<label>Email ID:</label>
 						<span></span>
 					</div>
 					<div class="styled-input w3ls-text">
 						<input type="text" name="con_no" required=""/>
-						<label>Con no:</label>
+						<label>Contact no:</label>
 						<span></span>
 					</div>
                     <div class="styled-input w3ls-text">
