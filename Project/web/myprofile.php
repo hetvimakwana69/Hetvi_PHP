@@ -1,3 +1,17 @@
+<?php
+if(isset($_SESSION['user_name']))
+{
+	
+}
+else
+{
+	echo "<script>
+	      alert('Login success');
+		  window.location='index';
+		  </script>";
+}
+?>
+
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -78,7 +92,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									</div>
 									
 									<div class="agile_main_grid_left2_grid_bottom">
-										<a href="editprofile?edit_cust_id=<?php echo $fetch->cust_id;?>"">Edit</a>
+										<a href="editprofile?edit_cust_id=<?php echo $fetch->cust_id;?>">Edit</a>
 									</div>
 								</div>
 							</div>

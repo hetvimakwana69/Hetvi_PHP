@@ -15,7 +15,7 @@ include_once('header.php');
  	<div class="blank">
 	
 
-			<div class="blank-page">
+			<div class="blank-page" style="overflow:auto">
 				
 				<div class="container mt-3">
 				  <h2>Manage User</h2>
@@ -32,6 +32,7 @@ include_once('header.php');
 						<th>aadhar card no</th>
 						<th>driving licence no</th>
 						<th>Edit</th>
+						<th>Status</th>
 						<th>Delete</th>
 					  </tr>
 					</thead>
@@ -50,7 +51,8 @@ include_once('header.php');
 						<td><?php echo $mu->a_no;?></td>
 						<td><?php echo $mu->dl_no;?></td>
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="delete?del_cust_id=<?php echo $mu->cust_id?>" class="btn btn-danger">Delete</a></td>
+						<td><a href="status?status_cust_id=<?php echo $mu->cust_id?>" class="btn btn-danger"><?php echo $mu->status;?></a></td>
+						<td><a href="delete?del_cust_id=<?php echo $mu->cust_id?>" class="btn btn-primary">Delete</a></td>
 					  </tr>
 					  <?php
 					  }
