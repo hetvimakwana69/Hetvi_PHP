@@ -55,6 +55,9 @@ class control extends model
 			break;
 			
 			case '/profile':
+			$where=array("user_name"=>$_SESSION['admin']);
+			$run=$this->select_where('admin',$where);
+			$fetch=$run->fetch_object();
 			include_once('profile.php');
 			break;
 			
@@ -202,6 +205,7 @@ class control extends model
 			include_once('manage_cartype.php');
 			break;
 			
+			
 			case '/delete':
 			if(isset($_REQUEST['del_employee_id']))
 			{
@@ -321,6 +325,80 @@ class control extends model
 					  </script>";
 				 }
 			 }
+			break;
+			
+			case '/status':
+			
+			if(isset($_REQUEST['status_cust_id']))
+			{
+				$cust_id=$_REQUEST['status_cust_id'];
+				$where=array("cust_id"=>$cust_id);
+				$run=$this->select_where('customer',$where);
+				$fetch=$run->fetch_object();
+				$status=$fetch->status;
+				
+				if($status=="Block")
+				{
+					$arr=array("status"=>"Unblock");
+					$res=$this->update('customer',$arr,$where);
+					if($res)
+					{
+						echo "<script> 
+							alert('Unblock Success') 
+							window.location='manage_user';
+							</script>";
+					}
+				}
+				else
+				{
+					$arr=array("status"=>"Block");
+					$res=$this->update('customer',$arr,$where);
+					if($res)
+					{
+						unset($_SESSION['email']);
+						echo "<script> 
+							alert('Block Success') 
+							window.location='manage_user';
+							</script>";
+					}
+				}
+			}
+			
+			if(isset($_REQUEST['status_e_id']))
+			{
+				$e_id=$_REQUEST['status_e_id'];
+				$where=array("e_id"=>$e_id);
+				$run=$this->select_where('employee',$where);
+				$fetch=$run->fetch_object();
+				$status=$fetch->status;
+				
+				if($status=="Block")
+				{
+					$arr=array("status"=>"Unblock");
+					$res=$this->update('employee',$arr,$where);
+					if($res)
+					{
+						echo "<script> 
+							alert('Unblock Success') 
+							window.location='manage_emp';
+							</script>";
+					}
+				}
+				else
+				{
+					$arr=array("status"=>"Block");
+					$res=$this->update('employee',$arr,$where);
+					if($res)
+					{
+						unset($_SESSION['email']);
+						echo "<script> 
+							alert('Block Success') 
+							window.location='manage_emp';
+							</script>";
+					}
+				}
+			}
+			
 			break;
 			
 			default :

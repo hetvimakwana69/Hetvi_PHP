@@ -36,6 +36,7 @@ class control extends model
 			case '/login':
 			if(isset($_REQUEST['submit']))
 			{
+				
 				$user_name=$_REQUEST['user_name'];
 				$password=$_REQUEST['pass'];
 				$pass=md5($password);
@@ -46,19 +47,29 @@ class control extends model
 				$res=$run->num_rows; 
 				if($res==1) 
 				{
+					$data=$run->fetch_object();
+					$status=$data->status;
+					if($status=="Unblock")
+					{	
+					  $_SESSION['user_name']=$user_name;
 					
-					$_SESSION['user_name']=$user_name;
-					
-					echo "<script> 
+					  echo "<script> 
 						alert('Login Success') 
 						window.location='index';
 						</script>";
-					
+					}
+					else 
+					{	
+				      echo  "<script>
+					  alert('Status block')
+					  window.location='login';
+					  </script>";	
+					}
 				}
                 else
 				{
 					echo "<script> 
-					alert('Login Failed due wrong credebntial') 
+					alert('Login Failed due wrong credential') 
 					window.location='index';
 					</script>";
 				}

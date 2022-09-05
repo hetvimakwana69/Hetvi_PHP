@@ -15,7 +15,7 @@ include_once('header.php');
  	<div class="blank">
 	
 
-			<div class="blank-page">
+			<div class="blank-page" style="overflow:auto">
 				
 				<div class="container mt-3">
 				  <h2>Manage Employee</h2>
@@ -31,6 +31,7 @@ include_once('header.php');
 						<th>Address</th>
 						<th>Contact_no</th>
 						<th>Edit</th>
+						<th>Status</th>
 						<th>Delete</th>
 					  </tr>
 					</thead>
@@ -46,9 +47,9 @@ include_once('header.php');
 						<td><?php echo $m->emailid;?></td>
 						<td><?php echo $m->address;?></td>
 						<td><?php echo $m->contact_no;?></td>
-						
 						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="delete?del_employee_id=<?php echo $m->e_id?>"class="btn btn-danger">Delete</a></td>
+                        <td><a href="status?status_e_id=<?php echo $m->e_id?>" class="btn btn-danger"><?php echo $m->status;?></a></td>
+						<td><a href="delete?del_employee_id=<?php echo $m->e_id?>"class="btn btn-primary">Delete</a></td>
 					  </tr>
 					  <?php
 					    }
