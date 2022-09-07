@@ -123,38 +123,7 @@ class control extends model
 			include_once('add_emp.php');
 			break;
 			
-			case '/index':
-			if(isset($_REQUEST['submit']))
-			{
-				$user_name=$_REQUEST['user_name'];
-				$password=$_REQUEST['pass'];
-				$pass=md5($password);
-				
-				$where=array("user_name"=>$user_name,"pass"=>$pass);
-				$run=$this->select_where('customer',$where);
-				
-				$res=$run->num_rows; 
-				if($res==1) 
-				{
-					
-					$_SESSION['user_name']=$user_name;
-					
-					echo "<script> 
-						alert('Login Success') 
-						window.location='index';
-						</script>";
-					
-				}
-				else
-				{
-					echo "<script> 
-						alert('Login Failed due wrong credebntial') 
-						window.location='index';
-						</script>";
-				}
-			}
-			include_once('index.php');
-			break;
+			
 			
 			case '/dashboard':
 			include_once('dashboard.php');

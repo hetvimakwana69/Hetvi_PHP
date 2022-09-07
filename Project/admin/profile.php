@@ -7,7 +7,7 @@ else
 {
 	echo "<script>
 	      alert('Login success');
-		  window.location='index';
+		  window.location='dashboard';
 		  </script>";
 }
 include_once('header.php');
