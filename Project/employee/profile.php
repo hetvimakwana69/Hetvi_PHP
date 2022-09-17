@@ -1,8 +1,17 @@
 <?php
+if(isset($_SESSION['user_name']))
+{
+	
+}
+else
+{
+	echo "<script>
+		  window.location='dashboard';
+		  </script>";
+}
 include_once('header.php');
 ?>
- 
- 	<!--banner-->	
+ <!--banner-->	
 		    <div class="banner">
 		    	<h2>
 				<a href="dashboard">Home</a>
@@ -21,26 +30,31 @@ include_once('header.php');
 				<img src="images/pic.jpg" alt="">
 			</div>
 			<div class="col-md-8 profile-text">
-				<h6>Hetvi Makwana</h6>
+				<h3>ID:<?php echo $fetch->e_id;?></h3>
 				<table>
-				<tr><td>Department</td>  
+				<tr><td>Name</td>  
 				<td>:</td>  
-				<td>Web Designer</td></tr>
+				<td><?php echo $fetch->e_name;?></td></tr>
 				
 				<tr>
-				<td>Email</td>
+				<td>Username</td>
 				<td> :</td>
-				<td><a href="info@gmail.com">info@lorem.com</a></td>
+				<td><?php echo $fetch->user_name;?></td>
 				</tr>
 				<tr>
-				<td>Skills</td>
+				<td>Emailid</td>
 				<td> :</td>
-				<td> HTML, CSS,Jqury, Bootstrap</td>
+				<td> <?php echo $fetch->emailid;?></td>
 				</tr>
 				<tr>
-				<td>Country </td>
+				<td>Address </td>
 				<td>:</td>
-				<td> United Arab Emirates</td>
+				<td> <?php echo $fetch->address;?></td>
+				</tr>
+				<tr>
+				<td>Contact no</td>
+				<td>:</td>
+				<td> <?php echo $fetch->contact_no?></td>
 				</tr>
 				</table>
 			</div>

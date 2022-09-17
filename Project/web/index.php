@@ -61,20 +61,20 @@
 				<ul class="rslides" id="slider3">
 					<li>
 						<div class="banner-info">
-							<h3>Aliquam ut mauris vestibulum, condimentum neque vitae nulla.</h3>
-							<p>Pellentesque congue libero accumsan porta.</p>
+							<h3></h3>
+							<p></p>
 						</div>
 					</li>
 					<li>
 						<div class="banner-info">
-							<h3>Nam et urna interdum blandit condimentum vivamus neque vitae.</h3>
-							<p>Sed eu quam ut orci ullamcorper tincidunt quam.</p>
+							<h3></h3>
+							<p></p>
 						</div>
 					</li>
 					<li>
 						<div class="banner-info">
-							<h3>Cras pretium metus sed justo condimentum, sed commodo nulla.</h3>
-							<p>Nulla eu sapien et eros finibus congue.</p>
+							<h3></h3>
+							<p></p>
 						</div>
 					</li>
 				</ul>
@@ -165,7 +165,7 @@
 				<li>
 					<div class="biseller-column">
 						<a href="#"><img src="images/pic6.jpg" alt=""/></a>
-						<h4>Donec lacinia</h4>
+						<h4>Innova</h4>
 						<p>Cras pulvinar iaculis ex. Nullam vitae justo vel sapien malesuada varius ac blandit egestas nec felis. Nunc pharetra.
 							</p>
 						<a class="more hvr-bounce-to-bottom" href="gallery">Read More..</a>

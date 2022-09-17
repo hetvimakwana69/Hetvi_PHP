@@ -54,6 +54,9 @@ class control extends model
 			
 			
 			case '/profile':
+			$where=array("user_name"=>$_SESSION['user_name']);
+			$run=$this->select_where('employee',$where);
+			$fetch=$run->fetch_object();
 			include_once('profile.php');
 			break;
 			

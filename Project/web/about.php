@@ -153,7 +153,7 @@
 				<h3>Our Team</h3>
 				<div class="grid_4">
 					<div class="text1">
-						<img src="images/t1.jpg" alt="">
+						<img src="images/3.jpg" alt="">
 						<h4>Phasellus scipitilifen lus.</h4>
 						<p>Kuspendisse laoreet augue iderti wer interdum merti oremolo lectusto odio, sedorolu fringilla estero libero. </p>
 					</div>
@@ -174,7 +174,7 @@
 				</div>
 				<div class="grid_4">
 					<div class="text1">
-						<img src="images/t4.jpg" alt="">
+						<img src="images/t1.jpg" alt="">
 						<h4>Phasellus scipitilifen lus.</h4>
 						<p>Kuspendisse laoreet augue iderti wer interdum merti oremolo lectusto odio, sedorolu fringilla estero libero. </p>
 					</div>

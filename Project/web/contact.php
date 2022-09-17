@@ -71,19 +71,18 @@
 				</ol>
 			</div>
 			<div class="contact-bottom">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6632.248000703498!2d151.265683!3d-33.7832959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12abc7edcbeb07%3A0x5017d681632bfc0!2sManly+Vale+NSW+2093%2C+Australia!5e0!3m2!1sen!2sin!4v1433329298259"
-				    frameborder="0" style="border:0"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777264.9312382047!2d69.07500900630382!3d22.40133469535909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1663239043296!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				<div class="contact-text">
 					<div class="col-md-3 contact-right">
 						<div class="address">
 							<h5>Address</h5>
 							<p>The company name,
-								<span>Lorem ipsum dolor,</span> Glasglow Dr 40 Fe 72.</p>
+								<span><b>Rent My Car</b></span> Gujarat State Highway 41,Unjha-384170</p>
 						</div>
 						<div class="address">
 							<h5>Address1</h5>
-							<p>Tel:1115550001,
-								<span>Fax:190-4509-494</span> Email: <a href="mailto:example@email.com">contact@example.com</a></p>
+							<p>state:Gujarat,India
+								<span>Tel:02767 251 111</span> Email: <a href="mailto:example@email.com">contact@example.com</a></p>
 						</div>
 					</div>
 					<div class="col-md-9 contact-left">

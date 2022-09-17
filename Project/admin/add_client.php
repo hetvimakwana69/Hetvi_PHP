@@ -1,7 +1,71 @@
 <?php
 include_once('header.php');
 ?>
- 
+ <script>
+  function validate()
+  {
+	  var name=document.forms["clientform"]["name"].value;
+	  if(name=="" || name==null)
+	  {
+		  alert("please fill out name");
+		  return false;
+	  }
+	  var user_name=document.forms["clientform"]["user_name"].value;
+	   if(user_name=="" || user_name==null)
+	   {
+		   alert("please fill out the username");
+		   return false;
+	   } 
+      var emailid=document.forms["clientform"]["emailid"].value;
+      if(emailid=="" || emailid==null)
+	  {
+		  alert("please fill out the emailid");
+		  return false;
+	  }
+       var contact_no=document.forms["clientform"]["contact_no"].value;
+	   if(contact_no=="" || contact_no==null)
+	   {
+		   alert("please fill out the contact no");
+		   return false;
+	   } 
+	   var address=document.forms["clientform"]["address"].value;
+	   if(address=="" || address==null)
+	   {
+		   alert("please fill out the address");
+		   return false;
+	   } 
+	   var pass=document.forms["clientform"]["pass"].value;
+	   if(pass=="" || pass==null)
+	   {
+		   alert("please fill out the password");
+		   return false;
+	   } 
+	   var a_no=document.forms["clientform"]["a_no"].value;
+	   if(a_no=="" || a_no==null)
+	   {
+		   alert("please fill out the a_no");
+		   return false;
+	   }
+	   var dl_no=document.forms["clientform"]["dl_no"].value;
+	   if(dl_no=="" || dl_no==null)
+	   {
+		   alert("please fill out the a_no");
+		   return false;
+	   }
+	   var puc=document.forms["clientform"]["puc"].value;
+	   if(puc=="" || puc==null)
+	   {
+		   alert("please fill out the puc");
+		   return false;
+	   }
+	   var insurance=document.forms["clientform"]["insurance"].value;
+	   if(insurance=="" || insurance==null)
+	   {
+		   alert("please fill out the insurance");
+		   return false;
+	   }
+  }
+  </script>
  	<!--banner-->	
 		   <div class="banner">
 		    	<h2>
@@ -21,29 +85,29 @@ include_once('header.php');
          	<div class="vali-form">
             <div class="col-md-12 form-group1">
               <label class="control-label">Name</label>
-              <input type="text" name="name" placeholder="Name" required=""><br>
+              <input type="text" name="name" placeholder="Name" ><br>
             </div>
 			<div class="clearfix"> </div>
 			</div>
 			<div class="col-md-12 form-group1">
               <label class="control-label">User Name</label>
-              <input type="text" name="user_name" placeholder="User Name" required=""><br>
+              <input type="text" name="user_name" placeholder="User Name" ><br>
             </div>
             
             <div class="col-md-12 form-group1 group-mail">
               <label class="control-label">Email id</label>
-              <input type="text" name="emailid" placeholder="Email id" required="">
+              <input type="text" name="emailid" placeholder="Email id" >
             </div>
              <div class="clearfix"> </div>
             <div class="col-md-12 form-group1">
               <label class="control-label">Password</label>
-              <input type="password" name="pass" placeholder="Password" required="">
+              <input type="password" name="pass" placeholder="Password" >
             </div>
              <div class="clearfix"> </div>
               
 			  <div class="col-md-12 form-group1 group-mail">
               <label class="control-label">Address</label>
-              <textarea class="form-control" name="address" placeholder="Address" required=""></textarea>
+              <textarea class="form-control" name="address" placeholder="Address" ></textarea>
               </div>
 			
              <div class="clearfix"> </div>
@@ -53,7 +117,7 @@ include_once('header.php');
             
             <div class="col-md-12 form-group1 form-last">
               <label class="control-label">Contact Number</label>
-              <input type="text" name="contact_no" placeholder="Contact Number" required="">
+              <input type="text" name="contact_no" placeholder="Contact Number" >
             </div>
             <div class="clearfix"> </div>
             </div>
@@ -61,12 +125,12 @@ include_once('header.php');
              <div class="vali-form vali-form1">
              <div class="col-md-6 form-group1 form-last">
               <label class="control-label">Aadhar card no</label>
-              <input type="text" name="a_no" placeholder="Aadhar card no" required="">
+              <input type="text" name="a_no" placeholder="Aadhar card no" >
             </div>
 		
 			  <div class="col-md-6 form-group1 form-last">
               <label class="control-label">Driving Licence no</label>
-              <input type="text" name="dl_no" placeholder="Driving Licence no" required="">
+              <input type="text" name="dl_no" placeholder="Driving Licence no" >
             </div>
 			<div class="clearfix"> </div>
 			</div>
@@ -74,12 +138,12 @@ include_once('header.php');
 			<div class="vali-form vali-form1">
              <div class="col-md-6 form-group1">
               <label class="control-label">PUC</label>
-              <input type="text" name="puc" placeholder="PUC" required="">
+              <input type="text" name="puc" placeholder="PUC" >
             </div>
 			
 			  <div class="col-md-6 form-group1 form-last">
               <label class="control-label">Insurance Policy</label>
-              <input type="text" name="insurance" placeholder="Insurance Policy" required="">
+              <input type="text" name="insurance" placeholder="Insurance Policy" >
             </div>
 			<div class="clearfix"> </div>
 			</div>

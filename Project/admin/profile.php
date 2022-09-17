@@ -36,7 +36,7 @@ include_once('header.php');
 				<table>
 				<tr><td>Username:</td>  
 				<td>:</td>  
-				<td><?php echo $fetch->user_name?></td></tr>
+				<td><?php echo $fetch->user_name;?></td></tr>
 				
 				<tr>
 				<td>Email</td>

@@ -11,6 +11,13 @@ include_once('header.php');
 		  alert("please fill out e_name");
 		  return false;
 	  }
+	  var alpha=/^[A-Za-z]+$/;
+	  if(!alpha.test(e_name))
+	  {
+		  alert("please fill only character");
+		  return false;
+	  }
+	  
 	  var user_name=document.forms["empform"]["user_name"].value;
 	   if(user_name=="" || user_name==null)
 	   {
@@ -22,7 +29,14 @@ include_once('header.php');
 	   {
 		   alert("please fill out the emailid");
 		   return false;
-	   }  
+	   } 
+       var mail=/^[a-zA-Z0-9_]+@[a-zA-Z]+\.[a-zA-Z]{2,4}$/;
+       if(!mail.test(emailid))
+	   {
+		   alert("please proper email id");
+		   return false;
+	   }
+	   
 	   var address=document.forms["empform"]["address"].value;
 	   if(address=="" || address==null)
 	   {
@@ -34,7 +48,13 @@ include_once('header.php');
 	   {
 		   alert("please fill out the contact no");
 		   return false;
-	   } 
+	   }
+      var phone=/^[0-9]{10,11}$/;
+       if(!phone.test(contact_no))
+	   {
+		   alert("please proper phone no");
+		   return false;
+	   }		   
 	   var pass=document.forms["empform"]["pass"].value;
 	   if(pass=="" || pass==null)
 	   {

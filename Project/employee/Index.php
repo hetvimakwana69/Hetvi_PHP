@@ -28,6 +28,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <script src="js/jquery.min.js"> </script>
 <script src="js/bootstrap.min.js"> </script>
+
+<script>
+     function validate()
+	 {
+		 var user_name=document.forms["indexform"]["user_name"].value;
+		 if(user_name=="" || user_name==null)
+		 {
+			 alert("please fill out the user_name");
+			 return false;
+		 }
+		 var pass=document.forms["indexform"]["pass"].value;
+		 if(pass=="" || pass==null)
+		 {
+			 alert("please fill out the pass");
+			 return false;
+		 }
+	 }
+</script>
 </head>
 <body>
 	<div class="login">
@@ -35,14 +53,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<h1><a href="index.php">Employee Login  </a></h1>
 		<div class="login-bottom">
 			<h2>Login</h2>
-			<form action="" method="post" enctype="multipart/form-data">
+			<form action="" name="indexform" method="post" enctype="multipart/form-data" onsubmit="return validate()">
 			<div class="col-md-12">
 				<div class="login-mail">
-					<input type="text" name="user_name" placeholder="Username" required="">
+					<input type="text" name="user_name" placeholder="Username" >
 					<i class="fa fa-envelope"></i>
 				</div>
 				<div class="login-mail">
-					<input type="password" name="pass" placeholder="Password" required="">
+					<input type="password" name="pass" placeholder="Password" >
 					<i class="fa fa-lock"></i>
 				</div>
 				   <a class="news-letter " href="#">
