@@ -50,8 +50,8 @@ include_once('header.php');
 						<td><?php echo $m->address;?></td>
 						<td><?php echo $m->a_no;?></td>
 						<td><?php echo $m->dl_no;?></td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="status?status_cust_id=<?php echo $m->cust_id?>" class="btn btn-danger"><?php echo $m->status;?></a></td>
+						<td><a href="edit_user?edit_cust_id=<?php echo $m->cust_id;?>" class="btn btn-primary">Edit</a></td>
+						<td><a href="status?status_cust_id=<?php echo $m->cust_id;?>" class="btn btn-danger"><?php echo $m->status;?></a></td>
 						<td><a href="delete?del_cust_id=<?php echo $m->cust_id;?>" class="btn btn-primary">Delete</a></td>
 					  </tr>
 					  <?php

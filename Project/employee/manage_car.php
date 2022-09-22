@@ -49,8 +49,8 @@ include_once('header.php');
 						<td><img src="picture/<?php echo $e->img?>"width="50px" height="50px"></td>
 						<td><?php echo $e->type?></td>
 						<td><?php echo $e->fuel_type?></td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="delete?del_car_id=<?php echo $e->car_id?>" class="btn btn-danger">Delete</a></td>
+						<td><a href="edit_car?edit_car_id=<?php echo $e->car_id;?>" class="btn btn-primary">Edit</a></td>
+						<td><a href="delete?del_car_id=<?php echo $e->car_id;?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					 <?php
 					}

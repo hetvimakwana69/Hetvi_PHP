@@ -41,8 +41,8 @@ include_once('header.php');
 						<td><?php echo $mp->cust_id;?></td>
 						<td><?php echo $mp->booking_id;?></td>
 						<td><?php echo $mp->payment_type;?></td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="delete?del_p_id=<?php echo $mp->p_id?>" class="btn btn-danger">Delete</a></td>
+						<td><a href="edit_payment?edit_p_id=<?php echo $mp->p_id;?>" class="btn btn-primary">Edit</a></td>
+						<td><a href="delete?del_p_id=<?php echo $mp->p_id;?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					  <?php
 					}

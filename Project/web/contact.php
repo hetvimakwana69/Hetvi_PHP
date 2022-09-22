@@ -87,12 +87,12 @@
 					</div>
 					<div class="col-md-9 contact-left">
 						<form>
-							<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
-							<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
-							<input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
-							<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
+							<input type="text" name="name"  value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+							<input type="text" name="emailid" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+							<input type="text" name="cont_no" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
+							<textarea name="message" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
 							<div class="submit-btn">
-								<input type="submit" value="SUBMIT">
+								<input type="submit" name="submit" value="SUBMIT">
 							</div>
 						</form>
 					</div>

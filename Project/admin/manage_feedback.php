@@ -39,8 +39,8 @@ include_once('header.php');
 						<td><?php echo $mf->feedback_id;?></td>
 						<td><?php echo $mf->cust_id;?></td>
 						<td><?php echo $mf->comment;?></td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="delete?del_feed_id=<?php echo $mf->feedback_id?>" class="btn btn-danger">Delete</a></td>
+						<td><a href="edit_feedback?edit_feedback_id=<?php echo $mf->feedback_id;?>" class="btn btn-primary">Edit</a></td>
+						<td><a href="delete?del_feed_id=<?php echo $mf->feedback_id;?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					  <?php
 					}

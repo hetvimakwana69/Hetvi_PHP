@@ -50,7 +50,7 @@ include_once('header.php');
 						<td><?php echo $mu->address;?></td>
 						<td><?php echo $mu->a_no;?></td>
 						<td><?php echo $mu->dl_no;?></td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
+						<td><a href="edit_user?edit_cust_id=<?php echo $mu->cust_id?>" class="btn btn-primary">Edit</a></td>
 						<td><a href="status?status_cust_id=<?php echo $mu->cust_id?>" class="btn btn-danger"><?php echo $mu->status;?></a></td>
 						<td><a href="delete?del_cust_id=<?php echo $mu->cust_id?>" class="btn btn-primary">Delete</a></td>
 					  </tr>

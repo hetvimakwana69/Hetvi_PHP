@@ -27,6 +27,7 @@ include_once('header.php');
 						<th>Name</th>
 						<th>Emailid</th>
 						<th>Contact_no</th>
+						<th>Message</th>
 						<th>Edit</th>
 						<th>Delete</th>
 					  </tr>
@@ -41,7 +42,8 @@ include_once('header.php');
 						<td><?php echo $a->name;?></td>
 						<td><?php echo $a->emailid;?></td>
 						<td><?php echo $a->cont_no;?></td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
+						<td><?php echo $a->message;?></td>
+						<td><a href="edit_contact?edit_cont_id=<?php echo $a->cont_id;?>" class="btn btn-primary">Edit</a></td>
 						<td><a href="delete?del_cont_id=<?php echo $a->cont_id;?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					  <?php

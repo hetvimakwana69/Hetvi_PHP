@@ -47,11 +47,11 @@ include_once('header.php');
 						<td><?php echo $mca->name;?></td>
 						<td><?php echo $mca->des;?></td>
 						<td><?php echo $mca->price;?></td>
-						<td><?php echo $mca->img;?></td>
+						<td><img src="picture/<?php echo $mca->img;?>" height="80" width="80"></td>
 						<td><?php echo $mca->type;?></td>
 						<td><?php echo $mca->fuel_type;?></td>
-						<td><a href="#" class="btn btn-primary">Edit</a></td>
-						<td><a href="delete?del_car_id=<?php echo $mca->car_id?>" class="btn btn-danger">Delete</a></td>
+						<td><a href="edit_car?edit_car_id=<?php echo $mca->car_id;?>" class="btn btn-primary">Edit</a></td>
+						<td><a href="delete?del_car_id=<?php echo $mca->car_id;?>" class="btn btn-danger">Delete</a></td>
 					  </tr>
 					  <?php
 					}
