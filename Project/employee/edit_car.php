@@ -104,7 +104,7 @@ include_once('header.php');
 			 <div class="col-md-12 form-group1 form-last">
               <label class="control-label">Car Image</label>
               <input type="file" name="img" value="<?php echo $fetch->name;?>" placeholder="Image" >
-			  <img src="picture/<?php echo $fetch->img;?>" height="80" width="80">
+			  <img src="picture/car/<?php echo $fetch->img;?>" height="80" width="80">
             </div>
 			 <div class="clearfix"> </div>
 			 

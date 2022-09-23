@@ -198,7 +198,7 @@ class control extends model
 						if($_FILES['img']['size']>0)
 						{
 							$img=$_FILES['img']['name'];
-							$path='picture/'.$img;
+							$path='picture/car/'.$img;
 							$dup_file=$_FILES['img']['tmp_name'];
 							move_uploaded_file($dup_file,$path);
 							
@@ -206,7 +206,7 @@ class control extends model
 							$res=$this->update('car',$arr,$where);
 							if($res)
 							{
-								unlink('picture/'.$old_file);
+								unlink('picture/car/'.$old_file);
 								echo "<script>
 								alert('update success');
 								window.location='manage_car';
@@ -237,7 +237,7 @@ class control extends model
 				$cate_des=$_REQUEST['cate_des'];
 				
 				$cate_img=$_FILES['cate_img']['name'];  
-				$path='picture/'.$cate_img;
+				$path='picture/cartype/'.$cate_img;
 				$dup_file=$_FILES['cate_img']['tmp_name'];
 				move_uploaded_file($dup_file,$path);
 				
@@ -279,7 +279,7 @@ class control extends model
 						if($_FILES['cate_img']['size']>0)
 						{
 							$cate_img=$_FILES['cate_img']['name'];
-							$path='picture/'.$cate_img;
+							$path='picture/cartype/'.$cate_img;
 							$dup_file=$_FILES['cate_img']['tmp_name'];
 							move_uploaded_file($dup_file,$path);
 							
@@ -287,7 +287,7 @@ class control extends model
 							$res=$this->update('category',$arr,$where);
 							if($res)
 							{
-								unlink('picture/'.$old_file);
+								unlink('picture/cartype/'.$old_file);
 								echo "<script>
 								alert('update success');
 								window.location='manage_cartype';

@@ -38,6 +38,10 @@
 				</div>
 				<div class="clearfix"></div>
 			</div>
+			<?php
+			if(isset($_SESSION['user_name']))
+			{
+			?>
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -50,13 +54,38 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="index">Home <span class="sr-only">(current)</span></a></li>
-						<li class="active"><a href="about">About</a></li>
-						<li><a href="services">Services</a></li>
-						<li><a href="gallery">Gallery</a></li>
+						<li  class="active"><a href="cars">Categories</a></li>
+						<li><a href="booking">Booking</a></li>
+						<li><a href="cars">Available cars</a></li>
 						<li><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>
 			</nav>
+			<?php
+			}
+			else
+			{
+			?>
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					  </button>
+				</div>
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index">Home <span class="sr-only">(current)</span></a></li>
+						<li><a href="cars">Categories</a></li>
+						<li><a href="contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</nav>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 	<!---->

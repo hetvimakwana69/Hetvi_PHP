@@ -12,11 +12,12 @@ class control extends model
 		switch($path)
 		{
 			case '/index':
+			$fetcharr=$this->selectall('category');
 			include_once('index.php');
 			break;
 			
-			case '/about':
-			include_once('about.php');
+			case '/categories':
+			include_once('categories.php');
 			break;
 			
 			case '/contact':
@@ -40,12 +41,12 @@ class control extends model
 			include_once('contact.php');
 			break;
 			
-			case '/gallery':
-			include_once('gallery.php');
+			case '/cars':
+			include_once('cars.php');
 			break;
 			
-			case '/services':
-			include_once('services.php');
+			case '/booking':
+			include_once('booking.php');
 			break;
 			
 			

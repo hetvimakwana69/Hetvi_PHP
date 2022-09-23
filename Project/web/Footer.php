@@ -7,7 +7,7 @@
 					<ul>
 						<li><a href="about">About</a></li>
 						<li><a href="services">Services</a></li>
-						<li><a href="gallery">Gallery</a></li>
+						<li><a href="gallery">gallery</a></li>
 						<li><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 		<div class="col-md-8 ftr2-bottom">
-			<p>Copyright &copy; 2015 <span>Auto cars</span> All rights reserved | Design by <a href="http://w3layouts.com">Hetvi Makwana</a></p>
+			<p>Copyright &copy; 2015 <span>Auto gallery</span> All rights reserved | Design by <a href="http://w3layouts.com">Hetvi Makwana</a></p>
 		</div>
 	</div>
 	<!---->
