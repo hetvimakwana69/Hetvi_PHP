@@ -29,6 +29,18 @@ include_once('header.php');
 		   alert("please fill out the des");
 		   return false;
 	   } 
+	   var des=document.forms["empform"]["capacity"].value;
+	   if(capacity=="" || capacity==null)
+	   {
+		   alert("please fill out the capacity");
+		   return false;
+	   } 
+	   var des=document.forms["empform"]["mileage"].value;
+	   if(mileage=="" || mileage==null)
+	   {
+		   alert("please fill out the mileage");
+		   return false;
+	   } 
 	   var price=document.forms["empform"]["price"].value;
 	   if(price=="" || price==null)
 	   {
@@ -96,6 +108,16 @@ include_once('header.php');
               <input type="text" name="des" value="<?php echo $fetch->des;?>" placeholder="Description" >
             </div>
 			
+			<div class="col-md-12 form-group1 group-mail">
+              <label class="control-label">Capacity</label>
+              <input type="text" name="capacity" value="<?php echo $fetch->capacity;?>" placeholder="Capacity" >
+            </div>
+			
+			<div class="col-md-12 form-group1 group-mail">
+              <label class="control-label">Mileage</label>
+              <input type="text" name="mileage" value="<?php echo $fetch->mileage;?>" placeholder="Mileage" >
+            </div>
+			
 			 <div class="col-md-12 form-group1 group-mail">
               <label class="control-label">Price</label>
               <input type="text" name="price" value="<?php echo $fetch->price;?>" placeholder="Price" >
@@ -104,7 +126,7 @@ include_once('header.php');
 			 <div class="col-md-12 form-group1 form-last">
               <label class="control-label">Car Image</label>
               <input type="file" name="img" value="<?php echo $fetch->name;?>" placeholder="Image" >
-			  <img src="picture/<?php echo $fetch->img;?>" height="80" width="80">
+			  <img src="../web/picture/car/<?php echo $fetch->img;?>" height="80" width="80">
             </div>
 			 <div class="clearfix"> </div>
 			 

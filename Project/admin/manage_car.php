@@ -27,6 +27,8 @@ include_once('header.php');
 						<th>client_id</th>
 						<th>name</th>
 						<th>desc</th>
+						<th>capacity</th>
+						<th>mileage</th>
 						<th>price</th>
 						<th>car_img</th>
 						<th>Type</th>
@@ -46,8 +48,10 @@ include_once('header.php');
 						<td><?php echo $mca->client_id;?></td>
 						<td><?php echo $mca->name;?></td>
 						<td><?php echo $mca->des;?></td>
+						<td><?php echo $mca->capacity;?></td>
+						<td><?php echo $mca->mileage;?></td>
 						<td><?php echo $mca->price;?></td>
-						<td><img src="picture/<?php echo $mca->img;?>" height="80" width="80"></td>
+						<td><img src="../web/picture/car/<?php echo $mca->img;?>" height="80" width="80"></td>
 						<td><?php echo $mca->type;?></td>
 						<td><?php echo $mca->fuel_type;?></td>
 						<td><a href="edit_car?edit_car_id=<?php echo $mca->car_id;?>" class="btn btn-primary">Edit</a></td>

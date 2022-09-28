@@ -55,9 +55,10 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="index">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="cars">Categories</a></li>
-						<li><a href="booking">Booking</a></li>
+						<li><a href="categories">Categories</a></li>
+						<li><a href="bookingform">Booking</a></li>
 						<li ><a href="cars">Available cars</a></li>
+						<li><a href="carsform">Cars form</a></li>
 						<li class="active"><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>
@@ -79,7 +80,7 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="index">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="cars">Categories</a></li>
+						<li><a href="categories">Categories</a></li>
 						<li><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>

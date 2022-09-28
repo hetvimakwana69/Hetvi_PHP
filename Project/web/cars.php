@@ -55,9 +55,10 @@ include_once('Header.php');
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="index">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="cars">Categories</a></li>
-						<li><a href="booking">Booking</a></li>
+						<li><a href="categories">Categories</a></li>
+						<li><a href="bookingform">Booking</a></li>
 						<li class="active"><a href="cars">Available cars</a></li>
+						<li><a href="carsform">Cars form</a></li>
 						<li><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>
@@ -79,7 +80,7 @@ include_once('Header.php');
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="index">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="cars">Categories</a></li>
+						<li><a href="categories">Categories</a></li>
 						<li><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>
@@ -101,12 +102,19 @@ include_once('Header.php');
 			</div>
 			<div class="gallery-bottom">
 				<ul id="og-grid" class="og-grid">
+				<?php
+				foreach($fetcharr as $data)
+				{
+				?>
 					<li>
-						<a href="single.html" data-largesrc="images/car1.jpg" data-title=" MARUTI SUZUKI WAGONR" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
-							<img class="img-responsive" src="images/car1.jpg" alt="img01"/>
+						<a href="single" data-largesrc="../web/picture/car/<?php echo $data->img;?>" data-title="<?php echo $data->name;?>" data-description="<?php echo $data->des;?> <br>Capacity: <?php echo $data->capacity;?> <br>Mileage: <?php echo $data->mileage;?> <br>Price: <?php echo $data->price;?> <br>Type: <?php echo $data->type;?> <br>Fuel Type: <?php echo $data->fuel_type;?>" >
+							<img class="img-responsive" src="../web/picture/car/<?php echo $data->img;?>" alt="img01"/>
 						</a>
 					</li>
-					<li>
+			<?php
+				}
+			?>
+					<!--<li>
 						<a href="single.html" data-largesrc="images/car7.jpg" data-title=" MARUTI SUZUKI ALTO-K10" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
 							<img class="img-responsive" src="images/car7.jpg" alt="img02"/>
 						</a>
@@ -140,7 +148,7 @@ include_once('Header.php');
 						<a href="single.html" data-largesrc="images/car8.jpg" data-title="MAHINDRA SCORPIO" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada purus a convallis dictum. Phasellus sodales varius diam, non sagittis lectus. Morbi id magna ultricies ipsum condimentum scelerisque vel quis felis.. Donec et purus nec leo interdum sodales nec sit amet magna. Ut nec suscipit purus, quis viverra urna.Mauris dapibus eros eget metus consectetur, quis sollicitudin mi aliquam. Nunc ut tortor at risus faucibus sagittis. Vivamus ut elit mi. Proin vitae metus ante. Aenean rutrum quis tellus sed congue. Mauris id molestie magna. Suspendisse eleifend in mi sed vestibulum.">
 							<img class="img-responsive" src="images/car8.jpg" alt="img01"/>
 						</a>
-					</li>
+					</li>-->
 					<div class="clearfix"> </div>
 				</ul>
 			</div>

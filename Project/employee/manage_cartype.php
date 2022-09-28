@@ -41,7 +41,7 @@ include_once('header.php');
 					    <td><?php echo $c->cate_id;?></td>
 						<td><?php echo $c->cate_name;?></td>
 						<td><?php echo $c->cate_des;?></td>
-						<td><img src="picture/cartype/<?php echo $c->cate_img;?>"width="50px" height="50px"></td>
+						<td><img src="../web/picture/cartype/<?php echo $c->cate_img;?>"width="50px" height="50px"></td>
 						<td><a href="edit_cartype?edit_cate_id=<?php echo $c->cate_id;?>" class="btn btn-primary">Edit</a></td>
 						<td><a href="delete?del_cate_id=<?php echo $c->cate_id;?>" class="btn btn-danger">Delete</a></td>
 					  </tr>

@@ -40,7 +40,7 @@ include_once('header.php');
 					    <td><?php echo $ca->cate_id;?></td>
 						<td><?php echo $ca->cate_name;?></td>
 						<td><?php echo $ca->cate_des;?></td>
-						<td><img src="picture/<?php echo $ca->cate_img;?>" height="80" width="80"></td>
+						<td><img src="../web/picture/cartype/<?php echo $ca->cate_img;?>" height="80" width="80"></td>
                         <td><a href="edit_cartype?edit_cate_id=<?php echo $ca->cate_id;?>" class="btn btn-primary">Edit</a></td>
 					 <td><a href="delete?del_cate_id=<?php echo $ca->cate_id;?>" class="btn btn-danger">Delete</a></td>
 					  </tr>

@@ -27,6 +27,8 @@ include_once('header.php');
 						<th>client_id</th>
 						<th>name</th>
 						<th>desc</th>
+						<th>capacity</th>
+						<th>mileage</th>
 						<th>price</th>
 						<th>car_img</th>
 						<th>Type</th>
@@ -45,8 +47,10 @@ include_once('header.php');
 						<td><?php echo $e->client_id?></td>
 						<td><?php echo $e->name?></td>
 						<td><?php echo $e->des?></td>
+						<td><?php echo $e->capacity?></td>
+						<td><?php echo $e->mileage?></td>
 						<td><?php echo $e->price?></td>
-						<td><img src="picture/car/<?php echo $e->img?>"width="50px" height="50px"></td>
+						<td><img src="../web/picture/car/<?php echo $e->img?>"width="50px" height="50px"></td>
 						<td><?php echo $e->type?></td>
 						<td><?php echo $e->fuel_type?></td>
 						<td><a href="edit_car?edit_car_id=<?php echo $e->car_id;?>" class="btn btn-primary">Edit</a></td>

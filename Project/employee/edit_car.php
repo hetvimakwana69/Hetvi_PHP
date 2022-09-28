@@ -29,6 +29,18 @@ include_once('header.php');
 		   alert("please fill out the des");
 		   return false;
 	   } 
+	   var des=document.forms["empform"]["capacity"].value;
+	   if(capacity=="" || capacity==null)
+	   {
+		   alert("please fill out the capacity");
+		   return false;
+	   } 
+	   var des=document.forms["empform"]["mileage"].value;
+	   if(mileage=="" || mileage==null)
+	   {
+		   alert("please fill out the mileage");
+		   return false;
+	   } 
 	   var price=document.forms["empform"]["price"].value;
 	   if(price=="" || price==null)
 	   {
@@ -58,9 +70,9 @@ include_once('header.php');
  	<!--banner-->	
 		   <div class="banner">
 		    	<h2>
-				<a href="dashboard">Home</a>
+				
 				<i class="fa fa-angle-right"></i>
-				<span>Validation</span>
+				
 				</h2>
 		    </div>
 		<!--//banner-->
@@ -74,19 +86,19 @@ include_once('header.php');
          	<div class="vali-form">
 			<div class="col-md-12 form-group1">
               <label class="control-label">Car_id</label>
-              <input type="text" name="car_id" value="<?php echo $fetch->car_id;?>" placeholder="car_id" >
+              <input type="text" name="car_id" value="<?php echo $fetch->car_id;?>"  >
             </div>
 			
             <div class="col-md-12 form-group1">
-              <label class="control-label">Client_id</label>
-              <input type="text" name="client_id" value="<?php echo $fetch->client_id;?>" placeholder="client_id" >
+              <label class="control-label">Client id</label>
+              <input type="text" name="client_id"  value="<?php echo $fetch->client_id;?>" placeholder="Car name" >
             </div>
             <div class="clearfix"> </div>
             </div>
 			
 			<div class="col-md-12 form-group1">
               <label class="control-label">Car name</label>
-              <input type="text" name="name" value="<?php echo $fetch->name;?>" placeholder="Car name" >
+              <input type="text" name="name"  value="<?php echo $fetch->name;?>" placeholder="Car name" >
             </div>
 			 <div class="clearfix"> </div>
            
@@ -94,6 +106,16 @@ include_once('header.php');
             <div class="col-md-12 form-group1 group-mail">
               <label class="control-label">Description</label>
               <input type="text" name="des" value="<?php echo $fetch->des;?>" placeholder="Description" >
+            </div>
+			
+			<div class="col-md-12 form-group1 group-mail">
+              <label class="control-label">Capacity</label>
+              <input type="text" name="capacity" value="<?php echo $fetch->capacity;?>" placeholder="Capacity" >
+            </div>
+			
+			<div class="col-md-12 form-group1 group-mail">
+              <label class="control-label">Mileage</label>
+              <input type="text" name="mileage"  value="<?php echo $fetch->mileage;?>" placeholder="Mileage" >
             </div>
 			
 			 <div class="col-md-12 form-group1 group-mail">
@@ -104,7 +126,8 @@ include_once('header.php');
 			 <div class="col-md-12 form-group1 form-last">
               <label class="control-label">Car Image</label>
               <input type="file" name="img" value="<?php echo $fetch->name;?>" placeholder="Image" >
-			  <img src="picture/car/<?php echo $fetch->img;?>" height="80" width="80">
+			  <img src="../web/picture/car/<?php echo $fetch->img;?>" height="80" width="80">
+			  
             </div>
 			 <div class="clearfix"> </div>
 			 
@@ -115,7 +138,7 @@ include_once('header.php');
             </div>
 			<div class="col-md-12 form-group1 form-last">
               <label class="control-label">Fuel Type</label>
-              <input type="text" name="fuel_type" value="<?php echo $fetch->fuel_type;?>" placeholder="Fuel_type" >
+              <input type="text" name="fuel_type"  value="<?php echo $fetch->fuel_type;?>" placeholder="Fuel_type" >
             </div>
             <div class="clearfix"> </div>
            </div>
