@@ -56,7 +56,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<input type="text" name="address" required=""/>
 						<label>Address:</label>
 						<span></span>
-					</div>					
+					</div>	
+					<div class="styled-input w3ls-text">
+						<input type="text" name="a_no" required=""/>
+						<label>Aadhar No:</label>
+						<span></span>
+					</div>
+					<div class="styled-input w3ls-text">
+						<input type="text" name="dl_no" required=""/>
+						<label>Driving License No:</label>
+						<span></span>
+					</div>						
 					
 					<div class="wthree-text">  
 						<p>

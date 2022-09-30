@@ -9,7 +9,7 @@
 		<div class="container">
 			<div class="header">
 				<div class="logo">
-					<h1><a href="index"><img src="images/car.png" alt=""/>Rent My <span>gallery</span></a></h1>
+					<h1><a href="index"><img src="images/car.png" width="40px" height="40px" alt=""/>Rent My <span>Car</span></a></h1>
 				</div>
 				<div class="top_details">
 				<ul>
@@ -82,6 +82,7 @@
 					<ul class="nav navbar-nav">
 						<li><a href="index">Home <span class="sr-only">(current)</span></a></li>
 						<li><a href="categories">Categories</a></li>
+						<li><a href="cars">Available cars</a></li>
 						<li><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>

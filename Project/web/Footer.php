@@ -5,9 +5,9 @@
 				<div class="col-md-4 ftr2-grid1">
 					<h3>About Us</h3>
 					<ul>
-						<li><a href="about">About</a></li>
-						<li><a href="services">Services</a></li>
-						<li><a href="gallery">gallery</a></li>
+						<li><a href="about">Categories</a></li>
+						<li><a href="services">Booking</a></li>
+						<li><a href="gallery">Available cars</a></li>
 						<li><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 		<div class="col-md-8 ftr2-bottom">
-			<p>Copyright &copy; 2015 <span>Auto gallery</span> All rights reserved | Design by <a href="http://w3layouts.com">Hetvi Makwana</a></p>
+			<p>Copyright &copy; 2022 <span>Rent My Car</span> All rights reserved | Design by <a href="http://w3layouts.com">Hetvi Makwana</a></p>
 		</div>
 	</div>
 	<!---->

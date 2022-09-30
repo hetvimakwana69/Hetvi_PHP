@@ -8,7 +8,7 @@ include_once('Header.php');
 		<div class="container">
 			<div class="header">
 				<div class="logo">
-					<h1><a href="index"><img src="images/car.png" alt=""/>Rent My <span>gallery</span></a></h1>
+					<h1><a href="index"><img src="images/car.png" width="40px" height="40px" alt=""/>Rent My <span>Car</span></a></h1>
 				</div>
 				<div class="top_details">
 				<ul>
@@ -81,6 +81,7 @@ include_once('Header.php');
 					<ul class="nav navbar-nav">
 						<li><a href="index">Home <span class="sr-only">(current)</span></a></li>
 						<li><a href="categories">Categories</a></li>
+						<li><a href="cars">Available cars</a></li>
 						<li><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>
@@ -107,8 +108,10 @@ include_once('Header.php');
 				{
 				?>
 					<li>
-						<a href="single" data-largesrc="../web/picture/car/<?php echo $data->img;?>" data-title="<?php echo $data->name;?>" data-description="<?php echo $data->des;?> <br>Capacity: <?php echo $data->capacity;?> <br>Mileage: <?php echo $data->mileage;?> <br>Price: <?php echo $data->price;?> <br>Type: <?php echo $data->type;?> <br>Fuel Type: <?php echo $data->fuel_type;?>" >
-							<img class="img-responsive" src="../web/picture/car/<?php echo $data->img;?>" alt="img01"/>
+					
+						<a href="single" data-largesrc="picture/car/<?php echo $data->img;?>" data-title="<?php echo $data->name;?>" data-description="<?php echo $data->des;?> <br>Capacity: <?php echo $data->capacity;?> <br>Mileage: <?php echo $data->mileage;?> <br>Price: <?php echo $data->price;?> <br>Type: <?php echo $data->type;?> <br>Fuel Type: <?php echo $data->fuel_type;?> <br><button>Book Now</button>" >
+							<img class="img-responsive" src="picture/car/<?php echo $data->img;?>" alt="img01"/>
+							
 						</a>
 					</li>
 			<?php

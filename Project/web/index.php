@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="header">
 				<div class="logo">
-					<h1><a href="index"><img src="images/car.png" alt=""/>Rent My<span>Car</span></a></h1>
+					<h1><a href="index"><img src="images/car.png" width="40px" height="40px" alt=""/>Rent My<span>Car</span></a></h1>
 				</div>
 				<div class="top_details">
 				<ul>
@@ -29,12 +29,6 @@
 				}
 				?>
 				</ul><br>
-					<div class="search">
-						<form>
-							<input type="text"  value="" placeholder="Search location">
-							<input type="submit" value="">
-						</form>
-					</div>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -80,6 +74,7 @@
 					<ul class="nav navbar-nav">
 						<li><a href="index">Home <span class="sr-only">(current)</span></a></li>
 						<li><a href="categories">Categories</a></li>
+						<li><a href="cars">Available cars</a></li>
 						<li><a href="contact">Contact Us</a></li>
 					</ul>
 				</div>
@@ -88,26 +83,28 @@
 			}
 			?>
 			<div id="top" class="callbacks_container">
-				<ul class="rslides" id="slider3">
-					<li>
-						<div class="banner-info">
-							<h3></h3>
-							<p></p>
-						</div>
-					</li>
-					<li>
-						<div class="banner-info">
-							<h3></h3>
-							<p></p>
-						</div>
-					</li>
-					<li>
-						<div class="banner-info">
-							<h3></h3>
-							<p></p>
-						</div>
-					</li>
-				</ul>
+				<form action="" method="post" enctype="multipart/form-data">
+				<div class="col-md-4"><br>
+				<label style="color:white">Pickup Location</label>
+				<input type="text" class="form-control">
+				</div>
+				<div class="col-md-4"><br>
+				<label style="color:white">Drop Location</label>
+				<input type="text" class="form-control">
+				</div>
+				<div class="col-md-4"><br>
+				<label style="color:white">Pickup date & time</label>
+				<input type="date-time" class="form-control">
+				</div>
+				<div class="col-md-4"><br>
+				<label style="color:white">Drop date & time</label>
+				<input type="text" class="form-control">
+				</div>
+				
+				<div class="col-md-4"><br>
+				<input type="button" value="submit" style="background-color:#f66c53;color:Black;margin-top:25px">
+				</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -118,22 +115,23 @@
 				<div class="col-md-6 welcome_info">
 					<h3>Welcome</h3>
 					<span></span>
-					<h4>Ut eget neque ac ipsum venenatis lobortis at et diam.</h4>
-					<p>Curabitur porta nisl non dui lobortis, vel aliquet ex pretium. Vivamus ullamcorper odio at commodo egestas. Mauris lacinia
-						nibh a enim dictum, sit amet scelerisque enim molestie. Morbi ac laoreet ante, quis fermentum urna. Etiam sit amet
-						massa non nunc tincidunt mattis. Nunc non ex ultricies, tristique leo sed, vehicula mauris. Sed mollis tristique ligula,
-						nec euismod dolor pharetra non.</p>
-					<p>Etiam ante diam, congue sit amet elit placerat, faucibus faucibus ipsum. Vivamus vel laoreet nulla. Aenean id bibendum
-						diam. Donec rutrum mi diam, sed tempus metus luctus a. Nullam vitae quam sed felis mattis facilisis. Nunc magna. Donec
-						eleifend odio non neque semper eleifend. Mauris pharetra venenatis augue.</p>
+					<h4>SELF DRIVE CAR RENTAL IN AHMEDABAD</h4>
+					<p>Depending on the occasion and the number of passengers,RentMyCar allows you to hire a rental or self-drive car of your choice, and at an affordable rate.
+					Sign up on our website or mobile app, and decide on the rental duration, pickup location, and car type.
+					You can use RentMyCar to select the right car for the right purpose in your city. 
+					For instance, choose a light and small car to travel during peak business hours, or a powerful SUV for highway driving from Ahmedabad to Udaipur or Mount Abu with your friends.  </p>
+					<p>Business travellers can drive into the city from the Sardar Vallabhai Patel International airport, by availing the Ahmedabad airport pick-and-drop service, which will provide a rental taxi at the airport, once your flight lands.
+					Additionally, business users can use the self drive cars to pick up their clients or managers.
+					RentMyCar offers the joy of driving a car, without any added responsibilities such as car maintenance, paying for car insurance etc.
+					It also provides you with the flexibility and convenience of booking a car on the move and also provides Roadside assistance (RSA) in case the car breaks down.</p>
 					<a href="about" class="hvr-bounce-to-bottom">Read More</a>
 				</div>
 				<div class="col-md-6 welcome_pic">
-					<h2>Suspendisse massa pellentesque</h2>
-					<img src="images/wc.jpg" class="img-responsive" alt="" />
-					<h3>Vestibulum efficitur lacus nulla porttitor lorem luctus.</h3>
-					<p>Duis vitae auctor purus. Aenean feugiat nunc mauris, id porttitor turpis rhoncus sit amet. Lorem ipsum dolor sit amet,
-						consectetur adipiscing elit. Aenean finibus felis ac risus lacinia, non venenatis erat vestibulum.</p>
+					<h2>Car rental servicies in Ahmedabad</h2>
+					<img src="images/car12.jpg" class="img-responsive" alt="" />
+					
+					<p>With the convenience of online booking on the website or on your smartphone, RentMyCar vehicles have all-India permits. RentMyCar provides service from multiple parking sites across the city so that you can pick up the car you have chosen. 
+					</p>
 					<p></p>
 				</div>
 				<div class="clearfix"></div>
@@ -143,19 +141,17 @@
 	<!---->
 	<div class="auto_sec">
 		<div class="container">
-			<h3>Complete auto service</h3>
+			<h3>Rent A Car</h3>
 			<span></span>
 			<div class="auto_sec_grids">
 				<div class="col-md-8 auto_sec_left">
-					<img src="images/pic2.jpg" class="img-responsive" alt="" />
-					<h5><a href="#">Mauris a eros quis purus suscipit iaculis</a></h5>
-					<p>Etiam ante diam, congue sit amet elit placerat, faucibus faucibus ipsum. Vivamus vel laoreet nulla. Aenean id bibendum
-						diam. Donec rutrum mi diam, sed tempus metus luctus a. Nullam vitae quam sed felis mattis facilisis. Nunc magna ex,
-						consequat et dapibus nec, volutpat sit amet enim. Ut a sagittis nulla. Duis pulvinar et dolor vitae vulputate. Donec
-						eleifend odio non neque semper eleifend. Mauris pharetra venenatis augue.</p>
+					
+					<h5><a href="">SELF DRIVE CAR RENTAL IN AHMEDABAD</a></h5>
+					<p>No more worries about petrol mileage, fuel costs, insurance, and car breakdowns! RentMyCar has enabled driving convenience for travellers around the country and is fast expanding its reach to cities including Ahmedabad, Bangalore,
+					Chandigarh, Chennai, Coimbatore, Delhi-NCR, Hyderabad, Jaipur, Kochi, Kolkata, Ludhiana, Mangalore, Mumbai, Mysore, Pune, Siliguri, Vizag, Nagpur, Udaipur, Vijayawada, Surat, Lucknow and Guwahati.  </p>
 				</div>
 				<div class="col-md-4 auto_sec_right">
-					<p><a href="cars">Donec maximus enim</a></p>
+					
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -169,14 +165,13 @@
 			<div class="callbacks2_container">
 				<ul class="rslides" id="slider2">
 					<li>
-						<p>Curabitur pharetra sed magna at tincidunt. Maecenas auctor tincidunt ex. Aliquam a vestibulum Donec diam ipsum euismod.</p>
+						<p></p>
 					</li>
 					<li>
-						<p>Fusce erat nibh, ornare et suscipit non, varius a sapien. Donec vel lectus vitae nibh sodales semper. Donec diam ipsum.</p>
+						<p></p>
 					</li>
 					<li>
-						<p>Proin tincidunt sit amet velit quis dignissim. Donec et odio sed purus tristique vitae nibh imperdiet diam sed eget
-							metus.</p>
+						<p></p>
 					</li>
 				</ul>
 			</div>
@@ -198,7 +193,7 @@
 			?>
 				<li>
 					<div class="biseller-column">
-						<a href="#"><img src="../employee/picture/cartype/<?php echo $data->cate_img;?>" height="250px" width="250px" alt=""/></a>
+						<a href="#"><img src="picture/cartype/<?php echo $data->cate_img;?>" height="250px" width="250px" alt=""/></a>
 						<h4><?php echo $data->cate_name;?></h4>
 						<p><?php echo $data->cate_des;?></p>
 						<a class="more hvr-bounce-to-bottom" href="cars">Rent Now</a>

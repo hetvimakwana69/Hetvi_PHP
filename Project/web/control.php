@@ -128,10 +128,12 @@ class control extends model
 				$emailid=$_REQUEST['emailid'];
 				$con_no=$_REQUEST['con_no'];
 				$address=$_REQUEST['address'];
+				$a_no=$_REQUEST['a_no'];
+				$dl_no=$_REQUEST['dl_no'];
 				$password=$_REQUEST['pass'];
 				$pass=md5($password);
 				
-				$arr=array("name"=>$name,"user_name"=>$user_name,"emailid"=>$emailid,"pass"=>$pass,"con_no"=>$con_no,"address"=>$address);
+				$arr=array("name"=>$name,"user_name"=>$user_name,"emailid"=>$emailid,"pass"=>$pass,"con_no"=>$con_no,"address"=>$address,"a_no"=>$a_no,"dl_no"=>$dl_no);
 				
 				
 				$res=$this->insert('customer',$arr);
